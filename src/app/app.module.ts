@@ -7,13 +7,28 @@ import { HomeComponent } from './components/home/home.component';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { MainMenuComponent } from './components/home/components/main-menu/main-menu.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
+import { ToolbarMenuComponent } from './components/home/components/main-menu/toolbar-menu/toolbar-menu.component';
+import {CommonModule} from "@angular/common";
+import {MatIconModule} from "@angular/material/icon";
+
+const materialModules = [
+  MatCardModule,
+  MatButtonModule,
+  MatIconModule
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MainMenuComponent,
+    ToolbarMenuComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -24,7 +39,11 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    ...materialModules
+  ],
+  exports: [
+    ...materialModules
   ],
   providers: [],
   bootstrap: [AppComponent]
