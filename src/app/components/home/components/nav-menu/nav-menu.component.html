@@ -1,23 +1,16 @@
-<div class="header-image">
+<!--<div class="header-image">
   <div class="header-text">
     <img src="../../../../../assets/images/brandLogo.png" class="img-fluid" alt="Brand Logo">
   </div>
+</div>-->
+<div id="mySidebar" class="sidebar">
+  <!--<a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>-->
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Admin Panel</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home" routerLink="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#user" routerLink="/user">User</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#post" routerLink="/post">Post</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
+<div id="main">
+  <button class="openbtn" (click)="toggleNav()"><i class="fa-solid fa-bars"></i></button>
 </div>
