@@ -10,13 +10,15 @@ import { HomeComponent } from './components/home/home.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { NavMenuComponent } from './components/shared/components/nav-menu/nav-menu.component';
 import { HeaderComponent } from './components/shared/components/header/header.component';
+import { MainSectionsComponent } from './components/home/components/main-sections/main-sections.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavMenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainSectionsComponent
   ],
   imports: [
     BrowserModule,

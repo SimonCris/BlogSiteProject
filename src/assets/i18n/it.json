@@ -1,6 +1,7 @@
 {
-  "demo": {
-    "title": "Translation demo",
-    "text": "This is a simple demonstration app for ngx-translate"
-  }
+  "MAIN_SECTIONS": "Main Sections",
+  "MAIN_SECTIONS_ARMOCROMIA": "Armocromia",
+  "MAIN_SECTIONS_WEDDING": "Wedding",
+  "MAIN_SECTIONS_MAKE_UP": "Make Up",
+  "MAIN_SECTIONS_ARTICOLI": "Articoli"
 }
