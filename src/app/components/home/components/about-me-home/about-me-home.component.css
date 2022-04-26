@@ -1,0 +1,21 @@
+.mainCardContainer {
+  border: none;
+  margin-top: 2%;
+}
+
+h1 {
+  font-family: "Century Gothic", sans-serif;
+}
+
+h3 {
+  font-family: "Century Gothic", sans-serif;
+}
+
+p {
+  font: 1em 'Raleway',Verdana,Tahoma,Arial,Sans-serif;
+  color: #111;
+  line-height: 1.6em;
+  letter-spacing: .04em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

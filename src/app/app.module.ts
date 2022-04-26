@@ -11,6 +11,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { NavMenuComponent } from './components/shared/components/nav-menu/nav-menu.component';
 import { HeaderComponent } from './components/shared/components/header/header.component';
 import { MainSectionsComponent } from './components/home/components/main-sections/main-sections.component';
+import { AboutMeHomeComponent } from './components/home/components/about-me-home/about-me-home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainSectionsComponent } from './components/home/components/main-section
     HomeComponent,
     NavMenuComponent,
     HeaderComponent,
-    MainSectionsComponent
+    MainSectionsComponent,
+    AboutMeHomeComponent
   ],
   imports: [
     BrowserModule,
