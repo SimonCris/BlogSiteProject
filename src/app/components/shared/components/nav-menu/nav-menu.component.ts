@@ -50,9 +50,18 @@ export class NavMenuComponent implements OnInit {
 
   }
 
+  /** Metodo che chiude il navbar */
   public closeNav() {
-    $(document).getElementById("mySidebar").style.width = "0";
-    $(document).getElementById("main").style.marginLeft= "0";
+    let mySidebar = document?.getElementById("mySidebar");
+    let main = document?.getElementById("main");
+
+    if (mySidebar != null) {
+      mySidebar.style.width = "0";
+    }
+
+    if (main != null) {
+      main.style.marginLeft = "0";
+    }
   }
 
 }

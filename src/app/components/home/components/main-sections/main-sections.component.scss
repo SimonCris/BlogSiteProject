@@ -15,7 +15,7 @@
 
   h3 {
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Century Gothic', sans-serif;
   }
 
   h3:hover {
@@ -38,6 +38,11 @@
 @media only screen and (max-width: 768px) {
   .caption {
     margin-top: -20% !important;
+  }
+  .armocromiaTitle {
+    font-size: 147%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
   }
 }
 
