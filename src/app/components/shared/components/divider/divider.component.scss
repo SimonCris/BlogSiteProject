@@ -1,0 +1,59 @@
+
+
+// Base Divider class
+.divider {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+// Base line
+.line {
+  align-items: center;
+  margin: 1em -1em;
+
+  &:before,
+  &:after {
+    height: 1px;
+    margin: 0 1em;
+  }
+}
+
+.glow {
+  &:before,
+  &:after {
+    height: 6px;
+    -webkit-filter: blur(5px);
+    border-radius: 5px;
+  }
+
+  &:before {
+    background: linear-gradient(to right, #81549b, #9c27b042);
+  }
+
+  &:after {
+    background: linear-gradient(to left, #81549b, #9c27b042);
+  }
+}
+
+/** Gradients
+.gradient {
+  align-items: stretch;
+  margin: 1em 0;
+  height: 2em;
+  line-height: 2em;
+  color: white;
+  background: black;
+
+  &:before {
+    background: linear-gradient(to right, white, black);
+  }
+
+  &:after {
+    background: linear-gradient(to left, white, black);
+  }
+} */

@@ -12,6 +12,8 @@ import { NavMenuComponent } from './components/shared/components/nav-menu/nav-me
 import { HeaderComponent } from './components/shared/components/header/header.component';
 import { MainSectionsComponent } from './components/home/components/main-sections/main-sections.component';
 import { AboutMeHomeComponent } from './components/home/components/about-me-home/about-me-home.component';
+import { DividerComponent } from './components/shared/components/divider/divider.component';
+import { QualificationHomeComponent } from './components/home/components/qualification-home/qualification-home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AboutMeHomeComponent } from './components/home/components/about-me-home
     NavMenuComponent,
     HeaderComponent,
     MainSectionsComponent,
-    AboutMeHomeComponent
+    AboutMeHomeComponent,
+    DividerComponent,
+    QualificationHomeComponent
   ],
   imports: [
     BrowserModule,
