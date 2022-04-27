@@ -6,7 +6,18 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+
+  background: #616161;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#616161, #9e9e9e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#616161, #9e9e9e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#616161, #9e9e9e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#616161, #9e9e9e);
+  /* Standard syntax */
+
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -16,13 +27,14 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f1f1f1;
   display: block;
   transition: 0.3s;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidebar .closebtn {
@@ -36,14 +48,15 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: #9e9e9e;
   color: white;
   padding: 10px 15px;
   border: none;
+  position: fixed;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #9e9e9e;
 }
 
 #main {
