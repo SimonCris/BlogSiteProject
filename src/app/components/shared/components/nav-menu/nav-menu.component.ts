@@ -4,7 +4,7 @@ declare var $: any;
 @Component({
   selector: 'app-nav-menu',
   templateUrl: './nav-menu.component.html',
-  styleUrls: ['./nav-menu.component.scss']
+  styleUrls: ['./nav-menu.component.css']
 })
 export class NavMenuComponent implements OnInit {
 
@@ -14,6 +14,36 @@ export class NavMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    $(document).ready(function () {
+      var trigger = $('.hamburger'),
+        overlay = $('.overlay'),
+        isClosed = false;
+
+      trigger.click(function () {
+        hamburger_cross();
+      });
+
+      function hamburger_cross() {
+
+        if (isClosed == true) {
+          overlay.hide();
+          trigger.removeClass('is-open');
+          trigger.addClass('is-closed');
+          isClosed = false;
+        } else {
+          overlay.show();
+          trigger.removeClass('is-closed');
+          trigger.addClass('is-open');
+          isClosed = true;
+        }
+      }
+
+      $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+      });
+    });
+
   }
 
   /** Metodo che gestisce l'apertura e la chiusura del sidebar */
