@@ -174,20 +174,38 @@
 a[href*="#home"]::before {
   content: "\f015" !important;
 }
-a[href*="#about"]::before {
+a[href*="#aboutMe"]::before {
   content: "\f129" !important;
 }
-a[href*="#events"]::before {
-  content: "\f073" !important;
+a[href*="#chiSono"]::before {
+  content: "\f2bb" !important;
 }
-a[href*="#events"]::before {
-  content: "\f073" !important;
-}
-a[href*="#team"]::before {
-  content: "\f0c0" !important;
+a[href*="#diconoDiMe"]::before {
+  content: "\f5da" !important;
 }
 a[href*="#works"]::before {
   content: "\f0b1" !important;
+}
+a[href*="#armocromia"]::before {
+  content: "\f6cf" !important;
+}
+a[href*="#wedding"]::before {
+  content: "\f4f5" !important;
+}
+a[href*="#cambioLook"]::before {
+  content: "\e16d" !important;
+}
+a[href*="#formeCorpo"]::before {
+  content: "\e534" !important;
+}
+a[href*="#formeViso"]::before {
+  content: "\f630" !important;
+}
+a[href*="#makeUp"]::before {
+  content: "\f53f" !important;
+}
+a[href*="#qualifications"]::before {
+  content: "\f573" !important;
 }
 a[href*="#pictures"]::before {
   content: "\f03e" !important;
@@ -198,21 +216,14 @@ a[href*="#videos"]::before {
 a[href*="#books"]::before {
   content: "\f02d" !important;
 }
-a[href*="#art"]::before {
-  content: "\f1fc" !important;
-}
-a[href*="#awards"]::before {
-  content: "\f02e" !important;
-}
 a[href*="#services"]::before {
-  content: "\f013" !important;
+  content: "\f080" !important;
 }
 a[href*="#contact"]::before {
   content: "\f086" !important;
 }
-a[href*="#followme"]::before {
-  content: "\f099" !important;
-  color: #0084b4;
+a[href*="#blog"]::before {
+  content: "\f781" !important;
 }
 /*-------------------------------*/
 /*       Hamburger-Cross         */
