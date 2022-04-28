@@ -130,11 +130,10 @@
   display: inline-block;
 }
 .sidebar-brand {
-  height: 60px;
+  height: 95px;
   position: relative;
   background: #212531;
-  background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
-/* padding-top: 1em;*/
+  background: linear-gradient(to right bottom, #ffffff94 50%, #ffffffc2 50%);
 }
 .sidebar-brand a {
 color: #ddd;
@@ -346,5 +345,5 @@ a[href*="#blog"]::before {
 /*-------------------------------*/
 
 .logoImage {
-  max-width: 25%;
+  max-width: 85%;
 }
