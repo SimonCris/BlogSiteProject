@@ -14,6 +14,7 @@ import { MainSectionsComponent } from './components/home/components/main-section
 import { AboutMeHomeComponent } from './components/home/components/about-me-home/about-me-home.component';
 import { DividerComponent } from './components/shared/components/divider/divider.component';
 import { QualificationHomeComponent } from './components/home/components/qualification-home/qualification-home.component';
+import { FooterComponent } from './components/shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { QualificationHomeComponent } from './components/home/components/qualifi
     MainSectionsComponent,
     AboutMeHomeComponent,
     DividerComponent,
-    QualificationHomeComponent
+    QualificationHomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
