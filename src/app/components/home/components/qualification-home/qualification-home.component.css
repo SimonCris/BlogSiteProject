@@ -34,7 +34,7 @@ h1 {
   .opacityDiv {
     opacity: 0.5;
     background-color: black;
-    padding: 0;
+    padding: 1%;
   }
 
   .buttonDiv {
