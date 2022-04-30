@@ -4,18 +4,15 @@
 }
 
 h1 {
-  font-family: "Century Gothic", sans-serif;
+  font-family: 'Cinzel',serif;
 }
 
 h3 {
-  font-family: "Century Gothic", sans-serif;
+  font-family: 'Cinzel',serif;
 }
 
 p {
-  font: 1em 'Raleway',Verdana,Tahoma,Arial,Sans-serif;
-  color: #111;
-  line-height: 1.6em;
-  letter-spacing: .04em;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;  color: #111;
+  font-size: 1.25rem;
+  font-weight: 300;
 }

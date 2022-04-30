@@ -15,6 +15,7 @@ import { AboutMeHomeComponent } from './components/home/components/about-me-home
 import { DividerComponent } from './components/shared/components/divider/divider.component';
 import { QualificationHomeComponent } from './components/home/components/qualification-home/qualification-home.component';
 import { FooterComponent } from './components/shared/components/footer/footer.component';
+import { MediaHomeComponent } from './components/home/components/media-home/media-home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/shared/components/footer/footer.co
     AboutMeHomeComponent,
     DividerComponent,
     QualificationHomeComponent,
-    FooterComponent
+    FooterComponent,
+    MediaHomeComponent
   ],
   imports: [
     BrowserModule,

@@ -29,10 +29,18 @@
 
 .youtubeIcon {
   color: red;
+  :hover {
+    cursor: pointer;
+    color: #9c27b0;
+  }
 }
 
 .facebookIcon {
   color: blue;
+  :hover {
+    cursor: pointer;
+    color: #9c27b0;
+  }
 }
 
 .contactsIcon {
@@ -41,6 +49,10 @@
 
 .instagramIcon {
   color: white;
+  :hover {
+    cursor: pointer;
+    color: #9c27b0;
+  }
 }
 
 .menuItem:hover {
