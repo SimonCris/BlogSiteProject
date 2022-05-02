@@ -19,5 +19,25 @@
   "MEDIA_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "MEDIA_SECTION_SUBTITLE2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "MEDIA_SECTION_ARTICLE": "Vai all'articolo",
-  "MEDIA_SECTION_ARTICLE_TITLE": "ARTICOLI"
+  "MEDIA_SECTION_ARTICLE_TITLE": "ARTICOLI",
+
+  "NAVBAR_MENU": "NAVBAR_MENU",
+  "NAVBAR_MENU_HOME": "Home",
+  "NAVBAR_MENU_ABOUT_ME": "About Me",
+  "NAVBAR_MENU_CHI_SONO": "Chi Sono",
+  "NAVBAR_MENU_DICONO_DI_ME": "Dicono di Me",
+  "NAVBAR_MENU_WORKS": "Works",
+  "NAVBAR_MENU_ARMOCROMIA": "Armocromia",
+  "NAVBAR_MENU_WEDDING": "Wedding",
+  "NAVBAR_MENU_CAMBIO_LOOK": "Cambio Look",
+  "NAVBAR_MENU_FORME_VISO": "Forme del viso",
+  "NAVBAR_MENU_FORME_CORPO": "Forme del corpo",
+  "NAVBAR_MENU_MAKE_UP": "Make up in palette",
+  "NAVBAR_MENU_QUALIFICATIONS": "Qualifiche",
+  "NAVBAR_MENU_BLOG": "Blog",
+  "NAVBAR_MENU_PHOTO": "Foto",
+  "NAVBAR_MENU_VIDEO": "Video",
+  "NAVBAR_MENU_ARTICOLI": "Articoli",
+  "NAVBAR_MENU_SERVICES_LIST": "Lista Servizi",
+  "NAVBAR_MENU_CONTACTS": "Contatti"
 }
