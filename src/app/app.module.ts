@@ -16,6 +16,7 @@ import { DividerComponent } from './components/shared/components/divider/divider
 import { QualificationHomeComponent } from './components/home/components/qualification-home/qualification-home.component';
 import { FooterComponent } from './components/shared/components/footer/footer.component';
 import { MediaHomeComponent } from './components/home/components/media-home/media-home.component';
+import { ScrollToTopComponent } from './components/shared/components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MediaHomeComponent } from './components/home/components/media-home/medi
     DividerComponent,
     QualificationHomeComponent,
     FooterComponent,
-    MediaHomeComponent
+    MediaHomeComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
