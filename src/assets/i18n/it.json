@@ -39,5 +39,17 @@
   "NAVBAR_MENU_VIDEO": "Video",
   "NAVBAR_MENU_ARTICOLI": "Articoli",
   "NAVBAR_MENU_SERVICES_LIST": "Lista Servizi",
-  "NAVBAR_MENU_CONTACTS": "Contatti"
+  "NAVBAR_MENU_CONTACTS": "Contatti",
+
+  "FOOTER": "FOOTER",
+  "FOOTER_MENU_LINKS": "Links",
+  "FOOTER_MENU_ABOUT_ME": "About Me",
+  "FOOTER_MENU_WORKS": "Works",
+  "FOOTER_MENU_SERVICES_LIST": "Lista Servizi",
+  "FOOTER_MENU_MAKE_UP": "Make Up",
+  "FOOTER_MENU_QUALIFICATIONS": "Qualifiche",
+  "FOOTER_MENU_BLOG": "Blog",
+  "FOOTER_MENU_CONTACS": "Contatti",
+  "FOOTER_MENU_SOCIAL": "Social",
+  "FOOTER_COPYRIGHT": "© 2022 Copyright:"
 }
