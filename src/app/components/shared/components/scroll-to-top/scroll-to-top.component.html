@@ -1,3 +1,5 @@
-<div id="mybutton" *ngIf="pageYoffset > 0">
-  <button class="feedback" (click)="scrollToTop()">Feedback</button>
+<div id="scrollToTopButton" *ngIf="pageYoffset > 0">
+  <button class="scrollButton" (click)="scrollToTop()">
+    <em class="fa-solid fa-angles-up"></em>
+  </button>
 </div>
