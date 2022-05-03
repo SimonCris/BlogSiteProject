@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {db} from "../../../main";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {HomeService} from "./services/home.service";
+import {AngularFireStorage, AngularFireStorageReference, AngularFireUploadTask} from "@angular/fire/compat/storage";
+import {finalize} from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -9,37 +10,53 @@ import { addDoc, collection, getDocs } from "firebase/firestore";
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  ref: AngularFireStorageReference;
+  task: AngularFireUploadTask;
+  downloadURL: any;
+  // uploadProgress: Observable<number>;
+
+  constructor(private homeService: HomeService,
+              private afStorage: AngularFireStorage) { }
 
   ngOnInit(): void {
 
-    // this.addUserTest();
-    // this.getUsersTest();
+    // this code returns the download url of image
+    // this.downloadURL = this.afStorage.ref('/images/testImages').getDownloadURL();}
+
+    /**this.homeService.getUsersTest().then(resp => {
+      alert(JSON.stringify(resp));
+    })
+      .catch(error => {
+
+    });*/
 
   }
 
-  public async addUserTest(): Promise<void> {
-    try {
-      const docRef = await addDoc(collection(db, "users"), {
-        first: "Alan",
-        middle: "Mathison",
-        last: "Turing",
-        born: 1912
-      });
+  // function to upload file
+  upload = (event: any) => {
+    // create a random id
+    const randomId = Math.random().toString(36).substring(2);
+    // create a reference to the storage bucket location
+    this.ref = this.afStorage.ref('/images/' + 'testImages');
+    // the put method creates an AngularFireUploadTask
+    // and kicks off the upload
+    this.task = this.ref.put(event.target.files[0]);
 
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  }
+    // AngularFireUploadTask provides observable
+    // to get uploadProgress value
+    /**this.uploadProgress = this.task.snapshotChanges()
+      .pipe(map(s => {
+        return !!s ? (s.bytesTransferred / s.totalBytes) * 100 : null;
+      }));*/
 
-  public async getUsersTest() {
+    this.task.snapshotChanges().pipe(
+      finalize(() => {
+        this.downloadURL = this.ref.getDownloadURL();
+        alert(this.downloadURL);
+      })
+    )
+      .subscribe();
 
-    const querySnapshot = await getDocs(collection(db, "users"));
-    querySnapshot.forEach((doc) => {
-      console.log('user -> ' + JSON.stringify(doc));
-    });
-
-  }
+  };
 
 }
