@@ -1,6 +1,11 @@
 export const environment = {
   production: true,
-  endpoint: {},
+  endpoint: {
+    blog: {
+      immagini: '/blog/media/immagini',
+      articoli: '/blog/media/articoli'
+    }
+  },
   firebaseConfig: {
     apiKey: "AIzaSyArey947zHHmtMAvwMaa4A6lP6bHlcgRJc",
     authDomain: "blogsiteproject-570a4.firebaseapp.com",

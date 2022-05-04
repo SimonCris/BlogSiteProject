@@ -49,16 +49,16 @@
     <app-divider></app-divider>
 
     <!-- ARTICOLI -->
-    <div class="card-text articlesDiv">
+    <div class="card-text articlesDiv" *ngIf="articlesList.length > 0">
       <h1 class="card-title">{{"MEDIA_SECTION_ARTICLE_TITLE" | translate}}</h1>
       <p class="">{{"MEDIA_SECTION_SUBTITLE2" | translate}}</p>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100 articleItem">
-            <img src="../../../../../assets/images/blog/test1.jpg" class="card-img-top imageDiv" alt="...">
+          <div class="card h-100 articleItem" *ngIf="articlesList[0].imagePathFromStorage | async; let article1Url">
+            <img [src]="article1Url" class="card-img-top imageDiv" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">{{articlesList[0].titolo}}</h5>
+              <p class="card-text">{{articlesList[0].testo}}</p>
             </div>
             <div class="card-footer footerDiv btn forwardButton">
               <a>{{"MEDIA_SECTION_ARTICLE" | translate}}</a>
@@ -66,11 +66,11 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 articleItem">
-            <img src="../../../../../assets/images/blog/test2.jpeg" class="card-img-top imageDiv" alt="...">
+          <div class="card h-100 articleItem" *ngIf="articlesList[1].imagePathFromStorage | async; let article2Url">
+            <img [src]="article2Url" class="card-img-top imageDiv" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">{{articlesList[1].titolo}}</h5>
+              <p class="card-text">{{articlesList[1].testo}}</p>
             </div>
             <div class="card-footer footerDiv btn forwardButton">
               <a>{{"MEDIA_SECTION_ARTICLE" | translate}}</a>
@@ -78,11 +78,11 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 articleItem">
-            <img src="../../../../../assets/images/blog/test3.jpeg" class="card-img-top imageDiv" alt="...">
+          <div class="card h-100 articleItem" *ngIf="articlesList[2].imagePathFromStorage | async; let article3Url">
+            <img [src]="article3Url" class="card-img-top imageDiv" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title">{{articlesList[2].titolo}}</h5>
+              <p class="card-text">{{articlesList[2].testo}}</p>
             </div>
             <div class="card-footer footerDiv btn forwardButton">
               <a>{{"MEDIA_SECTION_ARTICLE" | translate}}</a>
