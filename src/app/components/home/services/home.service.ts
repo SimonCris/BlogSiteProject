@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { addDoc, collection, getDocs } from "firebase/firestore";
 import {db} from "../../../../main";
-
+import {Photo, PhotoFactory} from "../../../data-model/classes/Photo";
+import {AngularFireStorage} from "@angular/fire/compat/storage";
+import { query, where, orderBy, limit } from "firebase/firestore";
 
 @Injectable({
   providedIn: 'root'
 })
 export class HomeService {
 
-  constructor() { }
+  constructor(private afStorage: AngularFireStorage) { }
 
   public async addUserTest(): Promise<void> {
     try {
@@ -25,16 +27,20 @@ export class HomeService {
     }
   }
 
-  public async getUsersTest() {
+  /** Servizio che recupera le 3 foto più 'nuove' inserite nel blog **/
+  public async getCarouselImages(): Promise<Photo[]> {
 
-    let array: any = [];
-
-    const querySnapshot = await getDocs(collection(db, "/blog/media/articoli"));
+    let photoList: Photo[] = [];
+    // const getImagesQuery = query(collection(db, "/blog/media/immagini"), where("population", ">", 100000), orderBy("population"), limit(2));
+    const getImagesQuery = query(collection(db, "/blog/media/immagini"), limit(3));
+    const querySnapshot = await getDocs(getImagesQuery);
     querySnapshot.forEach((doc) => {
-      array.push(doc.data());
+      let photo = PhotoFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      photo.imagePathFromStorage = this.afStorage.ref(photo.imagePath).getDownloadURL();
+      photoList.push(photo);
     });
-
-    return array;
+    return photoList;
 
   }
 }
