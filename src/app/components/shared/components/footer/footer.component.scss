@@ -1,0 +1,77 @@
+.infoSection {
+  background-color: #2f3441;
+}
+
+.copyrightSection {
+  background-color: #212531;
+}
+
+.boxContainer {
+
+}
+
+.imageLogoSection {
+  margin-bottom: 5%;
+}
+
+.socialIconsSection {
+  display: inline-flex;
+
+  p {
+    font-size: 30px;
+  }
+
+}
+
+.iconItem {
+  margin-left: 30%;
+}
+
+.youtubeIcon {
+  color: red;
+  :hover {
+    cursor: pointer;
+    color: #9c27b0;
+  }
+}
+
+.facebookIcon {
+  color: blue;
+  :hover {
+    cursor: pointer;
+    color: #9c27b0;
+  }
+}
+
+.contactsIcon {
+  color: #81549b;
+}
+
+.instagramIcon {
+  color: white;
+  :hover {
+    cursor: pointer;
+    color: #9c27b0;
+  }
+}
+
+.menuItem:hover {
+  color: #81549b;
+  cursor: pointer;
+}
+
+h6 {
+  font-family: "Century Gothic", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font: 1em 'Raleway',Verdana,Tahoma,Arial,Sans-serif;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 500px) {
+  .iconItem {
+    margin-left: 3%;
+  }
+}

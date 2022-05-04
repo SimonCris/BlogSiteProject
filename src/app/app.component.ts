@@ -10,7 +10,14 @@ export class AppComponent {
   title = 'BlogSiteProject';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('it');
+    this.translate.addLangs(['en', 'fr', 'ur', 'es', 'it', 'fa', 'de', 'zh-CHS']);
+    this.translate.setDefaultLang('it');
+    const browserLang = this.translate.getBrowserLang();
+
+    if (!!browserLang) {
+      this.translate.use(browserLang.match(/en|fr|ur|es|it|fa|de|zh-CHS/) ? browserLang : 'it');
+    }
+
   }
 
 }

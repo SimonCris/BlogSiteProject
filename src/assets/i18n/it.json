@@ -1,6 +1,56 @@
 {
-  "demo": {
-    "title": "Translation demo",
-    "text": "This is a simple demonstration app for ngx-translate"
-  }
+  "MAIN_SECTIONS": "Main Sections",
+  "MAIN_SECTIONS_ARMOCROMIA": "Armocromia",
+  "MAIN_SECTIONS_WEDDING": "Wedding",
+  "MAIN_SECTIONS_MAKE_UP": "Make Up",
+  "MAIN_SECTIONS_ARTICOLI": "Articoli",
+
+  "ABOUT_ME_HOME_SECTION": "About Me",
+  "ABOUT_ME_HOME_SECTION_TITLE": "ROSAMARIA TARZIA",
+  "ABOUT_ME_HOME_SECTION_SUBTITLE": "MAKE UP ARTIST E ARMOCROMISTA",
+  "ABOUT_ME_HOME_SECTION_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "ABOUT_ME_HOME_SECTION_DETAIL": "Approfondisci",
+
+  "QUALIFICATION_SECTION": "QUALIFICHE",
+  "QUALIFICATION_CONTENT": "In today's world internet is the most popular way of connecting with the people. At tutorialrepublic.com you will learn the essential of web development technologies along with real life practice example, so that you can create your own website to connect with the people around the world.",
+  "QUALIFICATION_BUTTON": "Scopri",
+
+  "MEDIA_SECTION": "BLOG",
+  "MEDIA_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "MEDIA_SECTION_SUBTITLE2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "MEDIA_SECTION_ARTICLE": "Vai all'articolo",
+  "MEDIA_SECTION_ARTICLE_TITLE": "ARTICOLI",
+  "MEDIA_SECTION_BLOG_TITLE": "Vai al Blog",
+
+  "NAVBAR_MENU": "NAVBAR_MENU",
+  "NAVBAR_MENU_HOME": "Home",
+  "NAVBAR_MENU_ABOUT_ME": "About Me",
+  "NAVBAR_MENU_CHI_SONO": "Chi Sono",
+  "NAVBAR_MENU_DICONO_DI_ME": "Dicono di Me",
+  "NAVBAR_MENU_WORKS": "Works",
+  "NAVBAR_MENU_ARMOCROMIA": "Armocromia",
+  "NAVBAR_MENU_WEDDING": "Wedding",
+  "NAVBAR_MENU_CAMBIO_LOOK": "Cambio Look",
+  "NAVBAR_MENU_FORME_VISO": "Forme del viso",
+  "NAVBAR_MENU_FORME_CORPO": "Forme del corpo",
+  "NAVBAR_MENU_MAKE_UP": "Make up in palette",
+  "NAVBAR_MENU_QUALIFICATIONS": "Qualifiche",
+  "NAVBAR_MENU_BLOG": "Blog",
+  "NAVBAR_MENU_PHOTO": "Foto",
+  "NAVBAR_MENU_VIDEO": "Video",
+  "NAVBAR_MENU_ARTICOLI": "Articoli",
+  "NAVBAR_MENU_SERVICES_LIST": "Lista Servizi",
+  "NAVBAR_MENU_CONTACTS": "Contatti",
+
+  "FOOTER": "FOOTER",
+  "FOOTER_MENU_LINKS": "Links",
+  "FOOTER_MENU_ABOUT_ME": "About Me",
+  "FOOTER_MENU_WORKS": "Works",
+  "FOOTER_MENU_SERVICES_LIST": "Lista Servizi",
+  "FOOTER_MENU_MAKE_UP": "Make Up",
+  "FOOTER_MENU_QUALIFICATIONS": "Qualifiche",
+  "FOOTER_MENU_BLOG": "Blog",
+  "FOOTER_MENU_CONTACS": "Contatti",
+  "FOOTER_MENU_SOCIAL": "Social",
+  "FOOTER_COPYRIGHT": "© 2022 Copyright:"
 }

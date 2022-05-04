@@ -1,0 +1,95 @@
+<div class="card text-center mainCardContainer">
+  <div class="card-body">
+    <h1 class="card-title">{{"MEDIA_SECTION" | translate}}</h1>
+    <p class="">{{"MEDIA_SECTION_SUBTITLE" | translate}}</p>
+
+    <!-- CAROUSEL FOTO -->
+    <div id="carouselDark" class="carousel carousel-dark slide imagesSection" data-bs-ride="carousel" *ngIf = "imagesList.length > 0">
+      <div class="carousel-indicators indicatorsDiv">
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000" *ngIf="imagesList[0].imagePathFromStorage | async; let image1Url">
+          <img [src]="image1Url" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block imageDescription">
+            <!--<h5>{{imagesList[0].titolo}}</h5>
+            <p>{{imagesList[0].descrizione}}</p>-->
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000" *ngIf="imagesList[1].imagePathFromStorage | async; let image2Url">
+          <img [src]="image2Url" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block imageDescription">
+            <!--<h5>{{imagesList[1].titolo}}</h5>
+            <p>{{imagesList[1].descrizione}}</p>-->
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000" *ngIf="imagesList[2].imagePathFromStorage | async; let image3Url">
+          <img [src]="image3Url" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block imageDescription">
+            <!--<h5>{{imagesList[2].titolo}}</h5>
+            <p>{{imagesList[2].descrizione}}</p>-->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div>
+      <a class="btn forwardButton">{{"MEDIA_SECTION_BLOG_TITLE" | translate}}</a>
+    </div>
+
+    <app-divider></app-divider>
+
+    <!-- ARTICOLI -->
+    <div class="card-text articlesDiv">
+      <h1 class="card-title">{{"MEDIA_SECTION_ARTICLE_TITLE" | translate}}</h1>
+      <p class="">{{"MEDIA_SECTION_SUBTITLE2" | translate}}</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 articleItem">
+            <img src="../../../../../assets/images/blog/test1.jpg" class="card-img-top imageDiv" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer footerDiv btn forwardButton">
+              <a>{{"MEDIA_SECTION_ARTICLE" | translate}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 articleItem">
+            <img src="../../../../../assets/images/blog/test2.jpeg" class="card-img-top imageDiv" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer footerDiv btn forwardButton">
+              <a>{{"MEDIA_SECTION_ARTICLE" | translate}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 articleItem">
+            <img src="../../../../../assets/images/blog/test3.jpeg" class="card-img-top imageDiv" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer footerDiv btn forwardButton">
+              <a>{{"MEDIA_SECTION_ARTICLE" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
