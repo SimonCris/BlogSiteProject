@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {HomeService} from "../../services/home.service";
 import {Photo} from "../../../../data-model/classes/Photo";
 import {Article} from "../../../../data-model/classes/Article";
+import {REQUEST_PRIORITY, RequestManagerService} from "../../../shared/services/request-manager.service";
+import {RequestManagerConstants} from "../../../../RequestManagerConstants";
+import {HttpStatusCode} from "../../../../AppSettings";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-media-home',
@@ -16,7 +20,9 @@ export class MediaHomeComponent implements OnInit {
   /** Lista degli articoli graficati (3 elementi nella lista) */
   articlesList: Article[] = [];
 
-  constructor(private homeService: HomeService) { }
+  constructor(private homeService: HomeService,
+              private requestManagerService: RequestManagerService,
+              private translateService: TranslateService) { }
 
   ngOnInit(): void {
     this.getPhotosImages();
@@ -26,11 +32,13 @@ export class MediaHomeComponent implements OnInit {
 
   /** Metodo che recupera la lista di foto da graficare nel Carousel */
   getPhotosImages(): void {
+    this.requestManagerService.pushNewRequest(RequestManagerConstants.GET_PHOTOS_IMAGES, REQUEST_PRIORITY.HIGH);
     this.homeService.getCarouselImages().then(resp => {
       this.imagesList = resp;
+      this.requestManagerService.handleRequest(RequestManagerConstants.GET_PHOTOS_IMAGES, HttpStatusCode.OK);
     })
       .catch(error => {
-        console.log(error);
+        this.requestManagerService.handleRequest(RequestManagerConstants.GET_PHOTOS_IMAGES, error.code, this.translateService.instant("GENERIC_ERROR"));
       })
   }
 

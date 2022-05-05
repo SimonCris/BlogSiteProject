@@ -52,5 +52,7 @@
   "FOOTER_MENU_BLOG": "Blog",
   "FOOTER_MENU_CONTACS": "Contatti",
   "FOOTER_MENU_SOCIAL": "Social",
-  "FOOTER_COPYRIGHT": "© 2022 Copyright:"
+  "FOOTER_COPYRIGHT": "© 2022 Copyright:",
+
+  "GENERIC_ERROR": "Si è verificato un errore"
 }

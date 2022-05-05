@@ -20,6 +20,10 @@ import { ScrollToTopComponent } from './components/shared/components/scroll-to-t
 import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFireStorageModule} from "@angular/fire/compat/storage";
 import {environment} from "../environments/environment";
+import { SpinnerComponent } from './components/shared/components/spinner/spinner.component';
+import {AppSettings} from "./AppSettings";
+import {ToastrModule} from "ngx-toastr";
+import {NgxSpinnerModule} from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -33,14 +37,23 @@ import {environment} from "../environments/environment";
     QualificationHomeComponent,
     FooterComponent,
     MediaHomeComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     // ngx-translate and the loader module
     HttpClientModule,
+    NgxSpinnerModule,
     AppRoutingModule,
+    ToastrModule.forRoot({
+      timeOut: AppSettings.NOTIFICATION_MESSAGE_TIME,
+      progressBar: true,
+      progressAnimation: 'increasing',
+      preventDuplicates: true,
+      closeButton: true
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

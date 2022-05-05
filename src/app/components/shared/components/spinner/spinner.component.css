@@ -1,0 +1,9 @@
+.loadingMessage {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.spinnerDiv {
+  color: white;
+}
