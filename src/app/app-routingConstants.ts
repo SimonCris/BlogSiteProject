@@ -4,7 +4,8 @@ export class AppRoutingConstants {
   public static path = {
     home : "home",
     whoIAm: "chiSono",
-    tellAboutMe: "diconoDiMe"
+    tellAboutMe: "diconoDiMe",
+    contacts: "contatti"
   };
 
   /**
@@ -13,7 +14,8 @@ export class AppRoutingConstants {
   public static masksState = {
     stateHome : "home",
     stateWhoIAm: "chiSono",
-    stateTellAboutMe: "diconoDiMe"
+    stateTellAboutMe: "diconoDiMe",
+    stateContacts: "contatti"
   };
 
   public static fullPath(key: any): string {
@@ -28,6 +30,9 @@ export class AppRoutingConstants {
 
       case 'diconoDiMe':
         return 'portal/' + this.path.tellAboutMe;
+
+      case 'contatti':
+        return 'portal/' + this.path.contacts;
 
       default:
         return 'portal/' + this.path.home;

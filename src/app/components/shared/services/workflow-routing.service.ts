@@ -79,6 +79,11 @@ export class WorkflowRoutingService {
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateTellAboutMe)]);
         break;
 
+      /** GO TO CONTATTI */
+      case AppRoutingConstants.masksState.stateContacts:
+        this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateContacts)]);
+        break;
+
     }
 
   }

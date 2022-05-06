@@ -26,6 +26,7 @@ import {ToastrModule} from "ngx-toastr";
 import {NgxSpinnerModule} from "ngx-spinner";
 import { WhoIAmComponent } from './components/about-me/components/who-i-am/who-i-am.component';
 import { TellAboutMeComponent } from './components/about-me/components/tell-about-me/tell-about-me.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TellAboutMeComponent } from './components/about-me/components/tell-abou
     ScrollToTopComponent,
     SpinnerComponent,
     WhoIAmComponent,
-    TellAboutMeComponent
+    TellAboutMeComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

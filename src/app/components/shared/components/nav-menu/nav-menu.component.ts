@@ -81,6 +81,11 @@ export class NavMenuComponent implements OnInit {
         this.closeNav();
         break;
 
+      case AppRoutingConstants.masksState.stateContacts:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateContacts);
+        this.closeNav();
+        break;
+
     }
 
   }
