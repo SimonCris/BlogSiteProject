@@ -10,19 +10,23 @@
         </div>
       </div>
 
-      <li><a><em class="fas fa-home menuIconEm"></em>{{"NAVBAR_MENU_HOME" | translate}}</a></li>
+      <li (click)="goTo('home')">
+        <a>
+          <em class="fas fa-home menuIconEm"></em>{{"NAVBAR_MENU_HOME" | translate}}
+        </a>
+      </li>
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <em class="fa-solid fa-info menuIconEm aboutMeIcon"></em>{{"NAVBAR_MENU_ABOUT_ME" | translate}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-          <li>
+          <li (click)="goTo('whoIAm')">
             <a class="dropdown-item">
               <em class="fa-solid fa-address-card menuIconEm"></em>{{"NAVBAR_MENU_CHI_SONO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('tellAboutMe')">
             <a class="dropdown-item">
               <em class="fa-solid fa-book-open-reader menuIconEm"></em>{{"NAVBAR_MENU_DICONO_DI_ME" | translate}}
             </a>

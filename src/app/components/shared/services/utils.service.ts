@@ -38,4 +38,16 @@ export class UtilsService {
     }
   }
 
+  /**Funzione per ottenere hashcode di una variabile */
+  static hash(stringToHash: any): string {
+    // return btoa(stringToHash);
+    return btoa(unescape(encodeURIComponent(stringToHash)));
+  }
+
+  /**Funzione per fare unhash di una variabile */
+  static unhash(stringToUnhash: any): any {
+    // return atob(stringToUnhash);
+    return decodeURIComponent(escape(atob(stringToUnhash)));
+  };
+
 }

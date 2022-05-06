@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AppRoutingConstants} from "../../../../app-routingConstants";
+import {WorkflowRoutingService} from "../../services/workflow-routing.service";
 declare var $: any;
 
 @Component({
@@ -11,7 +13,7 @@ export class NavMenuComponent implements OnInit {
   /** Identifica se il sidebar è aperto o chiuso */
   isSidebarOpen = false;
 
-  constructor() { }
+  constructor(private workflowRoutingService: WorkflowRoutingService) { }
 
   ngOnInit(): void {
 
@@ -46,52 +48,41 @@ export class NavMenuComponent implements OnInit {
 
   }
 
-  /** Metodo che gestisce l'apertura e la chiusura del sidebar */
-  public toggleNav() {
-
-    this.isSidebarOpen = !this.isSidebarOpen;
-    let mySidebar = document?.getElementById("mySidebar");
-    let main = document?.getElementById("main");
-
-    if (this.isSidebarOpen) {
-
-      if (mySidebar != null) {
-        mySidebar.style.width = "250px";
-      }
-
-      if (main != null) {
-        main.style.marginLeft = "250px";
-      }
-
-    } else {
-
-      if (mySidebar != null) {
-        mySidebar.style.width = "0";
-      }
-
-      if (main != null) {
-        main.style.marginLeft = "0";
-      }
-
-    }
-
-
-
-
-  }
 
   /** Metodo che chiude il navbar */
   public closeNav() {
-    let mySidebar = document?.getElementById("mySidebar");
-    let main = document?.getElementById("main");
 
-    if (mySidebar != null) {
-      mySidebar.style.width = "0";
+    let overlay = $('.overlay');
+    let trigger = $('.hamburger');
+    overlay.hide();
+    trigger.removeClass('is-open');
+    trigger.addClass('is-closed');
+    $('#wrapper').toggleClass('toggled');
+
+  }
+
+  /** Gestione navigazione */
+  public goTo(forwardState: string) {
+
+    switch (forwardState) {
+
+      case AppRoutingConstants.masksState.stateHome:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateHome);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateWhoIAm:
+        this.closeNav();
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateWhoIAm);
+        break;
+
+      case AppRoutingConstants.masksState.stateTellAboutMe:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateTellAboutMe);
+        this.closeNav();
+        break;
+
     }
 
-    if (main != null) {
-      main.style.marginLeft = "0";
-    }
   }
 
 }

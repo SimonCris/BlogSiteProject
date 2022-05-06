@@ -27,7 +27,6 @@ export class MediaHomeComponent implements OnInit {
   ngOnInit(): void {
     this.getPhotosImages();
     this.getArticles();
-
   }
 
   /** Metodo che recupera la lista di foto da graficare nel Carousel */

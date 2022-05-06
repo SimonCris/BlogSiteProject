@@ -6,6 +6,7 @@ import {ToastrService} from "ngx-toastr";
 import {UtilsService} from "./utils.service";
 import {AppSettings, HttpStatusCode} from "../../../AppSettings";
 import {AppConstants} from "../../../AppConstants";
+import {LoggerService} from "./logger.service";
 
 /**
  *
@@ -71,7 +72,7 @@ export class RequestManagerService {
 
     let index = this.getIndexOfPriority(request.priority, this._workingQueue);
 
-    // console.log('RequestManagerService', 'pushNewRequest', 'ADDED REQUEST: ', request);
+    LoggerService.logInfo('RequestManagerService', 'pushNewRequest', 'ADDED REQUEST: ', request);
 
     this._workingQueue.splice(index, 0, request);
   }
@@ -99,7 +100,7 @@ export class RequestManagerService {
     index = this.getIndexOfPriority(requestHandled.priority, this._endedQueue);
 
     this._endedQueue.splice(index, 0, requestHandled);
-    // console.log('RequestManagerService', 'handleRequest', 'workingQueue', this._workingQueue, 'HANDED REQUEST: ', requestHandled);
+    LoggerService.logInfo('RequestManagerService', 'handleRequest', 'workingQueue', this._workingQueue, 'HANDED REQUEST: ', requestHandled);
 
     if (this._workingQueue.length === 0) {
       this.publishErrorMessage(!!beMessage ? beMessage : '');
@@ -167,19 +168,19 @@ export class RequestManagerService {
     let errorMessageList = [];
     let successMessageList = [];
 
-    // LoggerService.logInfo('RequestManagerService', 'publishSuccessMessage', 'NotificationMessage ', this._endedQueue);
+    LoggerService.logInfo('RequestManagerService', 'publishSuccessMessage', 'NotificationMessage ', this._endedQueue);
 
     for (let response of this._endedQueue) {
       if (response.result >= AppSettings.HTTP_KO) {
         errorMessageList.push(message);
-        // LoggerService.logInfo('RequestManagerService', 'publishErrorMessage', 'NotificationMessage ', message);
+        LoggerService.logInfo('RequestManagerService', 'publishErrorMessage', 'NotificationMessage ', message);
 
       } else if (response.result == HttpStatusCode.OK) {
         successMessageList.push(message);
-        // LoggerService.logInfo('RequestManagerService', 'publishSuccessMessage', 'NotificationMessage ', message);
+        LoggerService.logInfo('RequestManagerService', 'publishSuccessMessage', 'NotificationMessage ', message);
 
       } else {
-        // LoggerService.logInfo('RequestManagerService', 'publishErrorMessage', 'NotificationMessage response ', response);
+        LoggerService.logInfo('RequestManagerService', 'publishErrorMessage', 'NotificationMessage response ', response);
       }
     }
 
