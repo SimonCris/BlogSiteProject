@@ -54,5 +54,7 @@
   "FOOTER_MENU_SOCIAL": "Social",
   "FOOTER_COPYRIGHT": "© 2022 Copyright:",
 
-  "GENERIC_ERROR": "Si è verificato un errore"
+  "GENERIC": "GENERIC",
+  "GENERIC_ERROR": "Si è verificato un errore",
+  "SPINNER_LOADING_LABEL": "Caricamento. . ."
 }

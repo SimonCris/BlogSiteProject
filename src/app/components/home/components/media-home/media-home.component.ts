@@ -44,11 +44,13 @@ export class MediaHomeComponent implements OnInit {
 
   /** Metodo che recupera la lista di articoli da graficare */
   getArticles(): void {
+    this.requestManagerService.pushNewRequest(RequestManagerConstants.GET_HOME_ARTICLES, REQUEST_PRIORITY.HIGH);
     this.homeService.getArticles().then(resp => {
       this.articlesList = resp;
+      this.requestManagerService.handleRequest(RequestManagerConstants.GET_HOME_ARTICLES, HttpStatusCode.OK);
     })
       .catch(error => {
-        console.log(error);
+        this.requestManagerService.handleRequest(RequestManagerConstants.GET_HOME_ARTICLES, error.code, this.translateService.instant("GENERIC_ERROR"));
       })
   }
 
