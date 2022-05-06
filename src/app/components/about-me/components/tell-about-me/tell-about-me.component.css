@@ -1,0 +1,8 @@
+.tellAboutMeDiv {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.text-primary, .text-primary-hover:hover {
+  color: #81549b !important;
+}
