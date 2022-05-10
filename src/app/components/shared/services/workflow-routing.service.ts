@@ -109,6 +109,11 @@ export class WorkflowRoutingService {
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateMakeUpInPalette)]);
         break;
 
+      /** GO TO BLOG */
+      case AppRoutingConstants.masksState.stateBlog:
+        this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlog)]);
+        break;
+
       /** GO TO BLOG ARTICOLI */
       case AppRoutingConstants.masksState.stateBlogArticles:
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlogArticles)]);

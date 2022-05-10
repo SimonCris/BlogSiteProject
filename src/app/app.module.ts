@@ -38,6 +38,7 @@ import { PhotosComponent } from './components/blog/components/photos/photos.comp
 import { VideosComponent } from './components/blog/components/videos/videos.component';
 import { ArticlesComponent } from './components/blog/components/articles/articles.component';
 import { ServicesListComponent } from './components/services-list/services-list.component';
+import { BlogMainComponent } from './components/blog/components/blog-main/blog-main.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { ServicesListComponent } from './components/services-list/services-list.
     PhotosComponent,
     VideosComponent,
     ArticlesComponent,
-    ServicesListComponent
+    ServicesListComponent,
+    BlogMainComponent
   ],
   imports: [
     BrowserModule,

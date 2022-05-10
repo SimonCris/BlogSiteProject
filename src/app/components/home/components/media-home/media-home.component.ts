@@ -6,6 +6,10 @@ import {REQUEST_PRIORITY, RequestManagerService} from "../../../shared/services/
 import {RequestManagerConstants} from "../../../../RequestManagerConstants";
 import {HttpStatusCode} from "../../../../AppSettings";
 import {TranslateService} from "@ngx-translate/core";
+import {ScrollToTopComponent} from "../../../shared/components/scroll-to-top/scroll-to-top.component";
+import {WorkflowRoutingService} from "../../../shared/services/workflow-routing.service";
+import {ViewportScroller} from "@angular/common";
+import {AppRoutingConstants} from "../../../../app-routingConstants";
 
 @Component({
   selector: 'app-media-home',
@@ -20,9 +24,17 @@ export class MediaHomeComponent implements OnInit {
   /** Lista degli articoli graficati (3 elementi nella lista) */
   articlesList: Article[] = [];
 
+  scrollToTopComponent: ScrollToTopComponent;
+
   constructor(private homeService: HomeService,
               private requestManagerService: RequestManagerService,
-              private translateService: TranslateService) { }
+              private translateService: TranslateService,
+              private workflowRoutingService: WorkflowRoutingService,
+              private scroll: ViewportScroller) {
+
+    this.scrollToTopComponent = new ScrollToTopComponent(this.scroll);
+
+  }
 
   ngOnInit(): void {
     this.getPhotosImages();
@@ -51,6 +63,11 @@ export class MediaHomeComponent implements OnInit {
       .catch(error => {
         this.requestManagerService.handleRequest(RequestManagerConstants.GET_HOME_ARTICLES, error.code, this.translateService.instant("GENERIC_ERROR"));
       })
+  }
+
+  goToBlog(): void {
+    this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateBlog);
+    this.scrollToTopComponent.scrollToTop();
   }
 
 }

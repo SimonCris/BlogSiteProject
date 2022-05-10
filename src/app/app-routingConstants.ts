@@ -12,6 +12,7 @@ export class AppRoutingConstants {
     bodyShapes: "formeCorpo",
     makeUpInPalette: "makeUpInPalette",
     qualifications: "qualifiche",
+    blog: "blog",
     blogArticles: "articoli",
     blogVideos: "video",
     blogPhotos: "foto",
@@ -33,6 +34,7 @@ export class AppRoutingConstants {
     stateBodyShapes: "formeCorpo",
     stateMakeUpInPalette: "makeUpInPalette",
     stateQualifications: "qualifiche",
+    stateBlog: "blog",
     stateBlogArticles: "articoli",
     stateBlogVideos: "video",
     stateBlogPhotos: "foto",
@@ -73,6 +75,9 @@ export class AppRoutingConstants {
 
       case this.path.qualifications:
         return 'portal/' + this.path.qualifications;
+
+      case this.path.blog:
+        return 'portal/' + this.path.blog;
 
       case this.path.blogArticles:
         return 'portal/' + this.path.blogArticles;

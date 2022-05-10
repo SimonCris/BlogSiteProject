@@ -16,6 +16,7 @@ import {PhotosComponent} from "./components/blog/components/photos/photos.compon
 import {VideosComponent} from "./components/blog/components/videos/videos.component";
 import {QualificationsComponent} from "./components/qualifications/qualifications.component";
 import {ServicesListComponent} from "./components/services-list/services-list.component";
+import {BlogMainComponent} from "./components/blog/components/blog-main/blog-main.component";
 
 const routes: Routes = [
   { path: '', redirectTo: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateHome), pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBodyShapes), component: BodyShapesComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateMakeUpInPalette), component: MakeupPaletteComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlogArticles), component: ArticlesComponent},
+  { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlog), component: BlogMainComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlogPhotos), component: PhotosComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlogVideos), component: VideosComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateQualifications), component: QualificationsComponent},

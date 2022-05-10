@@ -24,7 +24,7 @@ export class QualificationHomeComponent implements OnInit {
   }
 
   public goToQualifications(): void {
-    this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateTellAboutMe);
+    this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateQualifications);
     this.scrollToTopComponent.scrollToTop();
   }
 
