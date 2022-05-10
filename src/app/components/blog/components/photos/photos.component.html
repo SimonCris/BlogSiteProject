@@ -4,5 +4,13 @@
       <h2 class="h1 mb-0 text-primary">{{"BLOG_PHOTOS_SECTION" | translate}}</h2>
     </div>
     <app-divider></app-divider>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item breadcumbBlog" (click)="goToBlog()"><a>{{"BLOG_NAV_LABEL" | translate}}</a></li>
+        <li class="breadcrumb-item active breadcrumbSecondary" aria-current="page">{{"BLOG_PHOTOS_NAV_LABEL" | translate}}</li>
+      </ol>
+    </nav>
+
   </div>
 </div>
