@@ -81,6 +81,61 @@ export class NavMenuComponent implements OnInit {
         this.closeNav();
         break;
 
+      case AppRoutingConstants.masksState.stateArmocromia:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateArmocromia);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateWedding:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateWedding);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateLookChange:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateLookChange);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateFaceShapes:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateFaceShapes);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateBodyShapes:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateBodyShapes);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateMakeUpInPalette:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateMakeUpInPalette);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateBlogArticles:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateBlogArticles);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateBlogVideos:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateBlogVideos);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateBlogPhotos:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateBlogPhotos);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateQualifications:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateQualifications);
+        this.closeNav();
+        break;
+
+      case AppRoutingConstants.masksState.stateServicesList:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateServicesList);
+        this.closeNav();
+        break;
+
       case AppRoutingConstants.masksState.stateContacts:
         this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateContacts);
         this.closeNav();

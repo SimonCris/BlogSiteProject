@@ -39,27 +39,27 @@
           <em class="fa-solid fa-briefcase menuIconEm"></em> {{"NAVBAR_MENU_WORKS" | translate}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownWorks">
-          <li>
+          <li (click)="goTo('armocromia')">
             <a class="dropdown-item">
               <em class="fa-solid fa-dice-d20 menuIconEm"></em>{{"NAVBAR_MENU_ARMOCROMIA" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('wedding')">
             <a class="dropdown-item">
               <em class="fa-brands fa-keybase menuIconEm"></em>{{"NAVBAR_MENU_WEDDING" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('cambioLook')">
             <a class="dropdown-item">
               <em class="fa-solid fa-elevator menuIconEm"></em>{{"NAVBAR_MENU_CAMBIO_LOOK" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('formeViso')">
             <a class="dropdown-item">
               <em class="fa-solid fa-masks-theater menuIconEm"></em>{{"NAVBAR_MENU_FORME_VISO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('formeCorpo')">
             <a class="dropdown-item">
               <em class="fa-solid fa-people-line menuIconEm"></em>{{"NAVBAR_MENU_FORME_CORPO" | translate}}
             </a>
@@ -67,13 +67,13 @@
         </ul>
       </li>
 
-      <li>
+      <li  (click)="goTo('makeUpInPalette')">
         <a>
           <em class="fa-solid fa-palette menuIconEm"></em>{{"NAVBAR_MENU_MAKE_UP" | translate}}
         </a>
       </li>
 
-      <li>
+      <li  (click)="goTo('qualifiche')">
         <a>
           <em class="fa-solid fa-file-signature menuIconEm"></em>{{"NAVBAR_MENU_QUALIFICATIONS" | translate}}
         </a>
@@ -84,17 +84,17 @@
           <em class="fa-solid fa-blog menuIconEm"></em>{{"NAVBAR_MENU_BLOG" | translate}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-          <li>
+          <li (click)="goTo('foto')">
             <a class="dropdown-item">
               <em class="fa-solid fa-image menuIconEm"></em>{{"NAVBAR_MENU_PHOTO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('video')">
             <a class="dropdown-item">
               <em class="fa-solid fa-video menuIconEm"></em>{{"NAVBAR_MENU_VIDEO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('articoli')">
             <a class="dropdown-item">
               <em class="fa-solid fa-book menuIconEm"></em>{{"NAVBAR_MENU_ARTICOLI" | translate}}
             </a>
@@ -102,7 +102,7 @@
         </ul>
       </li>
 
-      <li>
+      <li (click)="goTo('listaServizi')">
         <a>
           <em class="fa-solid fa-chart-bar menuIconEm"></em>{{"NAVBAR_MENU_SERVICES_LIST" | translate}}
         </a>
