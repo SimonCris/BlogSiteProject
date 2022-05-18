@@ -39,6 +39,7 @@ import { VideosComponent } from './components/blog/components/videos/videos.comp
 import { ArticlesComponent } from './components/blog/components/articles/articles.component';
 import { ServicesListComponent } from './components/services-list/services-list.component';
 import { BlogMainComponent } from './components/blog/components/blog-main/blog-main.component';
+import {VgCoreModule} from "ngx-videogular";
 
 @NgModule({
   declarations: [
@@ -92,7 +93,8 @@ import { BlogMainComponent } from './components/blog/components/blog-main/blog-m
       }
     }),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    VgCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
