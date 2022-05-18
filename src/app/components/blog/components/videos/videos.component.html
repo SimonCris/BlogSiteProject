@@ -12,5 +12,23 @@
       </ol>
     </nav>
 
+    <!-- LISTA VIDEO -->
+    <div class="container" *ngIf="videosList.length > 0">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col mt-3" *ngFor="let video of videosList">
+          <!-- 21:9 aspect ratio -->
+          <!--<div class="embed-responsive embed-responsive-21by9" *ngIf="video.videoPathFromStorage | async; let videoUrl">
+            <iframe class="embed-responsive-item" src="{{videoUrl}}" title=""></iframe>
+          </div>-->
+
+          <div class="embed-responsive embed-responsive-21by9" *ngIf="video.videoPathFromStorage | async; let videoUrl">
+            <!--<video class="embed-responsive-item" muted="true" autoplay="false" loop="false" src="{{videoUrl}}" type="video/mp4" width="950">
+            </video>-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

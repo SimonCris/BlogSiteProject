@@ -3,7 +3,8 @@ export const environment = {
   endpoint: {
     blog: {
       immagini: '/blog/media/immagini',
-      articoli: '/blog/media/articoli'
+      articoli: '/blog/media/articoli',
+      video: '/blog/media/video'
     }
   },
   firebaseConfig: {
