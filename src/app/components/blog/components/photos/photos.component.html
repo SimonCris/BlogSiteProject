@@ -13,34 +13,12 @@
     </nav>
 
     <!-- LISTA FOTO -->
-    <div class="container">
+    <div class="container" *ngIf="imagesList.length > 0">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test1.jpg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test2.jpeg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test1.jpg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test1.jpg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test2.jpeg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test1.jpg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test1.jpg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test2.jpeg" class="img-fluid" alt="image">
-        </div>
-        <div class="col mt-3">
-          <img src="../../../../../assets/images/blog/test1.jpg" class="img-fluid" alt="image">
+        <div class="col mt-3" *ngFor="let image of imagesList">
+          <div *ngIf="image.imagePathFromStorage | async; let imageUrl">
+            <img [src]="imageUrl" class="img-fluid" alt="image">
+          </div>
         </div>
       </div>
     </div>
