@@ -6,13 +6,15 @@ export class Article {
   private _imagePath: string;
   private _imagePathFromStorage: any;
   private _testo: string;
+  private _descrizione: string;
 
-  constructor(data?: Date, titolo?: string, imagePath?: string, imagePathFromStorage?: any, testo?: string) {
+  constructor(data?: Date, titolo?: string, imagePath?: string, imagePathFromStorage?: any, testo?: string, descrizione?: string) {
     this._data = !!data ? new Date(data) : new Date();
     this._titolo = !!titolo ? titolo : '';
     this._testo = !!testo ? testo : '';
     this._imagePath = !!imagePath ? imagePath : '';
     this._imagePathFromStorage = !!imagePathFromStorage ? imagePathFromStorage : '';
+    this._descrizione = !!descrizione ? descrizione : '';
   }
 
   /** GETTER & SETTER */
@@ -56,6 +58,14 @@ export class Article {
   set testo(value: string) {
     this._testo = value;
   }
+
+  get descrizione(): string {
+    return this._descrizione;
+  }
+
+  set descrizione(value: string) {
+    this._descrizione = value;
+  }
 }
 
 export class ArticleFactory {
@@ -70,7 +80,8 @@ export class ArticleFactory {
       obj.titolo,
       obj.imagePath,
       '', // Campo che verrà popolato con l'url proveniente dallo storage di Firebase
-      obj.testo
+      obj.testo,
+      obj.descrizione
     ) : new Article();
   }
 

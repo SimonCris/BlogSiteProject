@@ -6,6 +6,7 @@ import {db} from "../../../../main";
 import { query, where, orderBy, limit } from "firebase/firestore";
 import { addDoc, collection, getDocs } from "firebase/firestore";
 import {Video, VideoFactory} from "../../../data-model/classes/Video";
+import {Article, ArticleFactory} from "../../../data-model/classes/Article";
 
 
 @Injectable({
@@ -45,6 +46,22 @@ export class BlogService {
       videoList.push(video);
     });
     return videoList;
+
+  }
+
+  /** Servizio che recupera gli articoli inseriti nella sezione blog **/
+  public async getArticles(): Promise<Article[]> {
+
+    let articlesList: Article[] = [];
+    const getArticlesQuery = query(collection(db, environment.endpoint.blog.articoli));
+    const querySnapshot = await getDocs(getArticlesQuery);
+    querySnapshot.forEach((doc) => {
+      let article = ArticleFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      article.imagePathFromStorage = this.afStorage.ref(article.imagePath).getDownloadURL();
+      articlesList.push(article);
+    });
+    return articlesList;
 
   }
 

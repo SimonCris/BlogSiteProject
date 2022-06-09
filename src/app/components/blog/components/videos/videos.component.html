@@ -12,12 +12,14 @@
       </ol>
     </nav>
 
+    <p class="">{{"BLOG_VIDEOS_SECTION_SUBTITLE" | translate}}</p>
+
     <!-- LISTA VIDEO -->
     <div class="container" *ngIf="videosList.length > 0">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         <div class="col mt-3" *ngFor="let video of videosList">
-
-        <h3>{{video.titolo}}</h3>
+          <h3 class="h3 mb-0 text-primary">{{video.titolo}}</h3>
+          <app-divider></app-divider>
           <div *ngIf="video.videoPathFromStorage | async; let videoUrl">
             <vg-player>
               <video title="" preload="auto" controls>
@@ -25,7 +27,7 @@
               </video>
             </vg-player>
           </div>
-
+          <p>{{video.descrizione}}</p>
         </div>
       </div>
     </div>
