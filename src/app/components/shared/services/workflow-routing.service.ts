@@ -139,6 +139,21 @@ export class WorkflowRoutingService {
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesList)]);
         break;
 
+      /** GO TO LISTA SERVIZI CONSULENZA IMMAGINE */
+      case AppRoutingConstants.masksState.stateServicesListImageConsulting:
+        this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesListImageConsulting)]);
+        break;
+
+      /** GO TO LISTA SERVIZI SHOPPING */
+      case AppRoutingConstants.masksState.stateServicesListShopping:
+        this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesListShopping)]);
+        break;
+
+      /** GO TO LISTA SERVIZI */
+      case AppRoutingConstants.masksState.stateServicesListStyleAnalysis:
+        this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesListStyleAnalysis)]);
+        break;
+
       /** GO TO CONTATTI */
       case AppRoutingConstants.masksState.stateContacts:
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateContacts)]);

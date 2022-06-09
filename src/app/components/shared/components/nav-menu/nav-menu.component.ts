@@ -156,6 +156,24 @@ export class NavMenuComponent implements OnInit {
         this.scrollToTopComponent.scrollToTop();
         break;
 
+      case AppRoutingConstants.masksState.stateServicesListImageConsulting:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateServicesListImageConsulting);
+        this.closeNav();
+        this.scrollToTopComponent.scrollToTop();
+        break;
+
+      case AppRoutingConstants.masksState.stateServicesListShopping:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateServicesListShopping);
+        this.closeNav();
+        this.scrollToTopComponent.scrollToTop();
+        break;
+
+      case AppRoutingConstants.masksState.stateServicesListStyleAnalysis:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateServicesListStyleAnalysis);
+        this.closeNav();
+        this.scrollToTopComponent.scrollToTop();
+        break;
+
       case AppRoutingConstants.masksState.stateContacts:
         this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateContacts);
         this.closeNav();

@@ -40,6 +40,9 @@ import { ArticlesComponent } from './components/blog/components/articles/article
 import { ServicesListComponent } from './components/services-list/services-list.component';
 import { BlogMainComponent } from './components/blog/components/blog-main/blog-main.component';
 import {VgCoreModule} from "ngx-videogular";
+import { StyleAnalysisComponent } from './components/services-list/components/style-analysis/style-analysis.component';
+import { ShoppingComponent } from './components/services-list/components/shopping/shopping.component';
+import { ImageConsultingComponent } from './components/services-list/components/image-consulting/image-consulting.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,10 @@ import {VgCoreModule} from "ngx-videogular";
     VideosComponent,
     ArticlesComponent,
     ServicesListComponent,
-    BlogMainComponent
+    BlogMainComponent,
+    StyleAnalysisComponent,
+    ShoppingComponent,
+    ImageConsultingComponent
   ],
   imports: [
     BrowserModule,

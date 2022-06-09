@@ -17,6 +17,9 @@ export class AppRoutingConstants {
     blogVideos: "video",
     blogPhotos: "foto",
     servicesList: "listaServizi",
+    imageConsulting: "consulenzaImmagine",
+    shopping: "shopping",
+    styleAnalysis: "analisiStile",
     contacts: "contatti"
   };
 
@@ -39,6 +42,9 @@ export class AppRoutingConstants {
     stateBlogVideos: "video",
     stateBlogPhotos: "foto",
     stateServicesList: "listaServizi",
+    stateServicesListImageConsulting: "consulenzaImmagine",
+    stateServicesListShopping: "shopping",
+    stateServicesListStyleAnalysis: "analisiStile",
     stateContacts: "contatti"
   };
 
@@ -90,6 +96,15 @@ export class AppRoutingConstants {
 
       case this.path.servicesList:
         return 'portal/' + this.path.servicesList;
+
+      case this.path.imageConsulting:
+        return 'portal/' + this.path.imageConsulting;
+
+      case this.path.shopping:
+        return 'portal/' + this.path.shopping;
+
+      case this.path.styleAnalysis:
+        return 'portal/' + this.path.styleAnalysis;
 
       case this.path.contacts:
         return 'portal/' + this.path.contacts;

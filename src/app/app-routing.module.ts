@@ -17,6 +17,9 @@ import {VideosComponent} from "./components/blog/components/videos/videos.compon
 import {QualificationsComponent} from "./components/qualifications/qualifications.component";
 import {ServicesListComponent} from "./components/services-list/services-list.component";
 import {BlogMainComponent} from "./components/blog/components/blog-main/blog-main.component";
+import {ImageConsultingComponent} from "./components/services-list/components/image-consulting/image-consulting.component";
+import {ShoppingComponent} from "./components/services-list/components/shopping/shopping.component";
+import {StyleAnalysisComponent} from "./components/services-list/components/style-analysis/style-analysis.component";
 
 const routes: Routes = [
   { path: '', redirectTo: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateHome), pathMatch: 'full' },
@@ -35,6 +38,9 @@ const routes: Routes = [
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateBlogVideos), component: VideosComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateQualifications), component: QualificationsComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesList), component: ServicesListComponent},
+  { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesListImageConsulting), component: ImageConsultingComponent},
+  { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesListShopping), component: ShoppingComponent},
+  { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateServicesListStyleAnalysis), component: StyleAnalysisComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateContacts), component: ContactsComponent},
 ];
 

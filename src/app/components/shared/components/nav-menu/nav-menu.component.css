@@ -301,3 +301,7 @@ top: 0;
 .logoImage {
   max-width: 85%;
 }
+
+.fontSmall {
+  font-size: smaller;
+}
