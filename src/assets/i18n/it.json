@@ -103,7 +103,15 @@
   "QUALIFICATIONS_SECTION": "QUALIFICHE",
 
   "SERVICES_LIST_SECTION": "LISTA SERVIZI",
-  "SERVICES_LIST_SECTION_IMAGE_CONSULTING": "Consulenza d’immagine completa (armocromia, forme, stile)",
+
+  "SERVICES_LIST_SECTION_IMAGE_CONSULTING": "CONSULENZA D'IMMAGINE COMPLETA (ARMOCROMIA, FORME, STILE)",
+  "SERVICES_LIST_SECTION_IMAGE_CONSULTING_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "SERVICES_LIST_SECTION_SHOPPING": "SHOPPING",
+  "SERVICES_LIST_SECTION_SHOPPING_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "SERVICES_LIST_SECTION_STYLE_ANALYSIS": "ANALISI DELLO STILE",
+  "SERVICES_LIST_SECTION_STYLE_ANALYSIS_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
   "GENERIC": "GENERIC",
   "GENERIC_ERROR": "Si è verificato un errore",

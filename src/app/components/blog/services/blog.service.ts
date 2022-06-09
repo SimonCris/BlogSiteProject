@@ -7,6 +7,7 @@ import { query, where, orderBy, limit } from "firebase/firestore";
 import { addDoc, collection, getDocs } from "firebase/firestore";
 import {Video, VideoFactory} from "../../../data-model/classes/Video";
 import {Article, ArticleFactory} from "../../../data-model/classes/Article";
+import {GenericDoc, GenericDocFactory} from "../../../data-model/classes/GenericDoc";
 
 
 @Injectable({
@@ -62,6 +63,22 @@ export class BlogService {
       articlesList.push(article);
     });
     return articlesList;
+
+  }
+
+  /** Servizio che recupera i media inseriti nella sezione Consulenza d'Immagine **/
+  public async getImageConsultingList(): Promise<GenericDoc[]> {
+
+    let imageConsultingList: GenericDoc[] = [];
+    const getimageConsultingListQuery = query(collection(db, environment.endpoint.media.consulenzaImmagine));
+    const querySnapshot = await getDocs(getimageConsultingListQuery);
+    querySnapshot.forEach((doc) => {
+      let imageConsultingFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      imageConsultingFile.mediaPathFromStorage = this.afStorage.ref(imageConsultingFile.mediaPath).getDownloadURL();
+      imageConsultingList.push(imageConsultingFile);
+    });
+    return imageConsultingList;
 
   }
 

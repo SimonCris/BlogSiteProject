@@ -9,6 +9,9 @@ export const environment = {
       immagini: '/blog/media/immagini',
       articoli: '/blog/media/articoli',
       video: '/blog/media/video'
+    },
+    media: {
+      consulenzaImmagine: '/blog/media/consulenzaImmagine'
     }
   },
   firebaseConfig: {
