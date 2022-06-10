@@ -20,12 +20,14 @@
         <div class="col mt-3" *ngFor="let article of articlesList">
           <h3 class="h3 mb-0 text-primary">{{article.titolo}}</h3>
           <app-divider></app-divider>
-          <div *ngIf="article.imagePathFromStorage | async; let imageUrl">
-            <img [src]="imageUrl" class="img-fluid" alt="image">
-          </div>
-          <p>{{article.descrizione}}</p>
-          <div class="footerDiv btn forwardButton">
-            <a>{{"BLOG_ARTICLES_GO_TO_ARTICLE_DETAIL" | translate}}</a>
+          <div class="articleItem">
+            <div *ngIf="article.imagePathFromStorage | async; let imageUrl">
+              <img [src]="imageUrl" class="img-fluid" alt="image">
+            </div>
+            <p>{{article.descrizione}}</p>
+            <div class="footerDiv btn forwardButton">
+              <a>{{"BLOG_ARTICLES_GO_TO_ARTICLE_DETAIL" | translate}}</a>
+            </div>
           </div>
         </div>
       </div>

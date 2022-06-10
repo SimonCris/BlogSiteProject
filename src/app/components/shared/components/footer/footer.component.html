@@ -24,22 +24,22 @@
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 boxContainer">
             <h6 class="text-uppercase mb-4 font-weight-bold">{{"FOOTER_MENU_LINKS" | translate}}</h6>
-            <p class="menuItem">
+            <p class="menuItem" (click)="goTo('chiSono')">
               <a>{{"FOOTER_MENU_ABOUT_ME" | translate}}</a>
             </p>
             <p class="menuItem">
               <a>{{"FOOTER_MENU_WORKS" | translate}}</a>
             </p>
-            <p class="menuItem">
+            <p class="menuItem" (click)="goTo('listaServizi')">
               <a>{{"FOOTER_MENU_SERVICES_LIST" | translate}}</a>
             </p>
-            <p class="menuItem">
+            <p class="menuItem" (click)="goTo('makeUpInPalette')">
               <a>{{"FOOTER_MENU_MAKE_UP" | translate}}</a>
             </p>
-            <p class="menuItem">
+            <p class="menuItem" (click)="goTo('qualifiche')">
               <a>{{"FOOTER_MENU_QUALIFICATIONS" | translate}}</a>
             </p>
-            <p class="menuItem">
+            <p class="menuItem" (click)="goTo('blog')">
               <a>{{"FOOTER_MENU_BLOG" | translate}}</a>
             </p>
           </div>
