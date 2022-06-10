@@ -4,5 +4,48 @@
       <h2 class="h1 mb-0 text-primary">{{"SERVICES_LIST_SECTION" | translate}}</h2>
     </div>
     <app-divider></app-divider>
+    <p class="">{{"SERVICES_LIST_SECTION_SUBTITLE" | translate}}</p>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">{{"SERVICES_LIST_STYLE_ANALYSIS_LABEL" | translate}}</h3>
+            <app-divider></app-divider>
+            <p class="card-text">{{"SERVICES_LIST_STYLE_ANALYSIS_LABEL_SUBTITLE" | translate}}</p>
+            <div class="servicesListItemContent">
+              <a class="btn forwardButton" (click)="goTo('analisiStile')">{{"SERVICES_LIST_GO_TO_STYLE_ANALYSIS_LABEL" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">{{"SERVICES_LIST_SHOPPING_LABEL" | translate}}</h3>
+            <app-divider></app-divider>
+            <p class="card-text">{{"SERVICES_LIST_SHOPPING_LABEL_SUBTITLE" | translate}}</p>
+            <div class="servicesListItemContent">
+              <a class="btn forwardButton" (click)="goTo('shopping')">{{"SERVICES_LIST_GO_TO_SHOPPING_LABEL" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">{{"SERVICES_LIST_IMAGE_CONSULTING_LABEL" | translate}}</h3>
+            <app-divider></app-divider>
+            <p class="card-text">{{"SERVICES_LIST_IMAGE_CONSULTING_LABEL_SUBTITLE" | translate}}</p>
+            <div class="servicesListItemContent">
+              <a class="btn forwardButton" (click)="goTo('consulenzaImmagine')">{{"SERVICES_LIST_GO_TO_IMAGE_CONSULTING_LABEL" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>
+
