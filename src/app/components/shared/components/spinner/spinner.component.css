@@ -1,0 +1,13 @@
+.loadingMessage {
+  color: white;
+  font-size: 1rem;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.spinnerDiv {
+  color: white;
+}
+
+.spinnerLoading {
+  margin-left: 30%;
+}

@@ -10,19 +10,23 @@
         </div>
       </div>
 
-      <li><a><em class="fas fa-home menuIconEm"></em>{{"NAVBAR_MENU_HOME" | translate}}</a></li>
+      <li (click)="goTo('home')">
+        <a>
+          <em class="fas fa-home menuIconEm"></em>{{"NAVBAR_MENU_HOME" | translate}}
+        </a>
+      </li>
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <em class="fa-solid fa-info menuIconEm aboutMeIcon"></em>{{"NAVBAR_MENU_ABOUT_ME" | translate}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-          <li>
+          <li (click)="goTo('chiSono')">
             <a class="dropdown-item">
               <em class="fa-solid fa-address-card menuIconEm"></em>{{"NAVBAR_MENU_CHI_SONO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('diconoDiMe')">
             <a class="dropdown-item">
               <em class="fa-solid fa-book-open-reader menuIconEm"></em>{{"NAVBAR_MENU_DICONO_DI_ME" | translate}}
             </a>
@@ -35,27 +39,27 @@
           <em class="fa-solid fa-briefcase menuIconEm"></em> {{"NAVBAR_MENU_WORKS" | translate}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownWorks">
-          <li>
+          <li (click)="goTo('armocromia')">
             <a class="dropdown-item">
               <em class="fa-solid fa-dice-d20 menuIconEm"></em>{{"NAVBAR_MENU_ARMOCROMIA" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('wedding')">
             <a class="dropdown-item">
               <em class="fa-brands fa-keybase menuIconEm"></em>{{"NAVBAR_MENU_WEDDING" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('cambioLook')">
             <a class="dropdown-item">
               <em class="fa-solid fa-elevator menuIconEm"></em>{{"NAVBAR_MENU_CAMBIO_LOOK" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('formeViso')">
             <a class="dropdown-item">
               <em class="fa-solid fa-masks-theater menuIconEm"></em>{{"NAVBAR_MENU_FORME_VISO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('formeCorpo')">
             <a class="dropdown-item">
               <em class="fa-solid fa-people-line menuIconEm"></em>{{"NAVBAR_MENU_FORME_CORPO" | translate}}
             </a>
@@ -63,13 +67,13 @@
         </ul>
       </li>
 
-      <li>
+      <li  (click)="goTo('makeUpInPalette')">
         <a>
           <em class="fa-solid fa-palette menuIconEm"></em>{{"NAVBAR_MENU_MAKE_UP" | translate}}
         </a>
       </li>
 
-      <li>
+      <li  (click)="goTo('qualifiche')">
         <a>
           <em class="fa-solid fa-file-signature menuIconEm"></em>{{"NAVBAR_MENU_QUALIFICATIONS" | translate}}
         </a>
@@ -80,17 +84,17 @@
           <em class="fa-solid fa-blog menuIconEm"></em>{{"NAVBAR_MENU_BLOG" | translate}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-          <li>
+          <li (click)="goTo('foto')">
             <a class="dropdown-item">
               <em class="fa-solid fa-image menuIconEm"></em>{{"NAVBAR_MENU_PHOTO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('video')">
             <a class="dropdown-item">
               <em class="fa-solid fa-video menuIconEm"></em>{{"NAVBAR_MENU_VIDEO" | translate}}
             </a>
           </li>
-          <li>
+          <li (click)="goTo('articoli')">
             <a class="dropdown-item">
               <em class="fa-solid fa-book menuIconEm"></em>{{"NAVBAR_MENU_ARTICOLI" | translate}}
             </a>
@@ -98,13 +102,30 @@
         </ul>
       </li>
 
-      <li>
-        <a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <em class="fa-solid fa-chart-bar menuIconEm"></em>{{"NAVBAR_MENU_SERVICES_LIST" | translate}}
         </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+          <li (click)="goTo('analisiStile')">
+            <a class="dropdown-item">
+              <em class="fa-solid fa-chalkboard-user menuIconEm"></em>{{"NAVBAR_MENU_SERVICES_LIST_STYLE_ANALYSIS" | translate}}
+            </a>
+          </li>
+          <li (click)="goTo('shopping')" class="fontSmall">
+            <a class="dropdown-item">
+              <em class="fa-solid fa-bag-shopping menuIconEm"></em>{{"NAVBAR_MENU_SERVICES_LIST_SHOPPING" | translate}}
+            </a>
+          </li>
+          <li (click)="goTo('consulenzaImmagine')" class="fontSmall">
+            <a class="dropdown-item">
+              <em class="fa-solid fa-chart-line menuIconEm"></em>{{"NAVBAR_MENU_SERVICES_LIST_IMAGE_CONSULTING" | translate}}
+            </a>
+          </li>
+        </ul>
       </li>
 
-      <li>
+      <li  (click)="goTo('contatti')">
         <a>
           <em class="fa-solid fa-comments menuIconEm"></em>{{"NAVBAR_MENU_CONTACTS" | translate}}
         </a>

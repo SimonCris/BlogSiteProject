@@ -20,6 +20,29 @@ import { ScrollToTopComponent } from './components/shared/components/scroll-to-t
 import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFireStorageModule} from "@angular/fire/compat/storage";
 import {environment} from "../environments/environment";
+import { SpinnerComponent } from './components/shared/components/spinner/spinner.component';
+import {AppSettings} from "./AppSettings";
+import {ToastrModule} from "ngx-toastr";
+import {NgxSpinnerModule} from "ngx-spinner";
+import { WhoIAmComponent } from './components/about-me/components/who-i-am/who-i-am.component';
+import { TellAboutMeComponent } from './components/about-me/components/tell-about-me/tell-about-me.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { ArmocromiaComponent } from './components/works/components/armocromia/armocromia.component';
+import { WeddingComponent } from './components/works/components/wedding/wedding.component';
+import { LookChangeComponent } from './components/works/components/look-change/look-change.component';
+import { FaceShapesComponent } from './components/works/components/face-shapes/face-shapes.component';
+import { BodyShapesComponent } from './components/works/components/body-shapes/body-shapes.component';
+import { MakeupPaletteComponent } from './components/makeup-palette/makeup-palette.component';
+import { QualificationsComponent } from './components/qualifications/qualifications.component';
+import { PhotosComponent } from './components/blog/components/photos/photos.component';
+import { VideosComponent } from './components/blog/components/videos/videos.component';
+import { ArticlesComponent } from './components/blog/components/articles/articles.component';
+import { ServicesListComponent } from './components/services-list/services-list.component';
+import { BlogMainComponent } from './components/blog/components/blog-main/blog-main.component';
+import {VgCoreModule} from "ngx-videogular";
+import { StyleAnalysisComponent } from './components/services-list/components/style-analysis/style-analysis.component';
+import { ShoppingComponent } from './components/services-list/components/shopping/shopping.component';
+import { ImageConsultingComponent } from './components/services-list/components/image-consulting/image-consulting.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +56,41 @@ import {environment} from "../environments/environment";
     QualificationHomeComponent,
     FooterComponent,
     MediaHomeComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    SpinnerComponent,
+    WhoIAmComponent,
+    TellAboutMeComponent,
+    ContactsComponent,
+    ArmocromiaComponent,
+    WeddingComponent,
+    LookChangeComponent,
+    FaceShapesComponent,
+    BodyShapesComponent,
+    MakeupPaletteComponent,
+    QualificationsComponent,
+    PhotosComponent,
+    VideosComponent,
+    ArticlesComponent,
+    ServicesListComponent,
+    BlogMainComponent,
+    StyleAnalysisComponent,
+    ShoppingComponent,
+    ImageConsultingComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     // ngx-translate and the loader module
     HttpClientModule,
+    NgxSpinnerModule,
     AppRoutingModule,
+    ToastrModule.forRoot({
+      timeOut: AppSettings.NOTIFICATION_MESSAGE_TIME,
+      progressBar: true,
+      progressAnimation: 'increasing',
+      preventDuplicates: true,
+      closeButton: true
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -49,7 +99,8 @@ import {environment} from "../environments/environment";
       }
     }),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    VgCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@
 
 .caption {
   background-color: black;
-  margin-top: -7%;
+  margin-top: -20%;
   opacity: 0.5;
   margin-right: 3%;
   margin-left: 3%;
@@ -23,6 +23,10 @@
   }
 }
 
+.colContainer:hover {
+  cursor: pointer;
+}
+
 
 
 /** MEDIA QUERY **/
@@ -33,14 +37,21 @@
   .colContainer {
     margin-bottom: 15%;
   }
+  .imageItem {
+    max-width: 65%;
+  }
+  .caption {
+    margin-right: 18%;
+    margin-left: 18%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .caption {
     margin-top: -20% !important;
+    font-size: larger;
   }
   .armocromiaTitle {
-    font-size: 147%;
     color: white;
     font-family: 'Century Gothic', sans-serif;
   }
@@ -49,7 +60,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1024px) {
   .caption {
-    margin-top: -15%;
+    margin-top: -20%;
   }
 
 }
@@ -57,7 +68,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .caption {
-    margin-top: -11%;
+    margin-top: -15%;
   }
 }
 

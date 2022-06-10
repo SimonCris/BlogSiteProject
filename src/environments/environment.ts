@@ -4,7 +4,16 @@
 
 export const environment = {
   production: false,
-  endpoint: {},
+  endpoint: {
+    blog: {
+      immagini: '/blog/media/immagini',
+      articoli: '/blog/media/articoli',
+      video: '/blog/media/video'
+    },
+    media: {
+      consulenzaImmagine: '/blog/media/consulenzaImmagine'
+    }
+  },
   firebaseConfig: {
     apiKey: "AIzaSyArey947zHHmtMAvwMaa4A6lP6bHlcgRJc",
     authDomain: "blogsiteproject-570a4.firebaseapp.com",
@@ -13,7 +22,8 @@ export const environment = {
     messagingSenderId: "336989683463",
     appId: "1:336989683463:web:05fdd95c06d65a5c144fa2",
     measurementId: "G-4T5RYTG7RF"
-  }
+  },
+  loggerServiceActive: true
 };
 
 /*

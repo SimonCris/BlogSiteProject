@@ -1,0 +1,36 @@
+<div class="container sectionContainer">
+  <div class="row justify-content-center">
+    <div class="text-start wow fadeIn">
+      <h2 class="h1 mb-0 text-primary">{{"BLOG_VIDEOS_SECTION" | translate}}</h2>
+    </div>
+    <app-divider></app-divider>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item breadcumbBlog" (click)="goToBlog()"><a>{{"BLOG_NAV_LABEL" | translate}}</a></li>
+        <li class="breadcrumb-item active breadcrumbSecondary" aria-current="page">{{"BLOG_VIDEOS_NAV_LABEL" | translate}}</li>
+      </ol>
+    </nav>
+
+    <p class="mt-4">{{"BLOG_VIDEOS_SECTION_SUBTITLE" | translate}}</p>
+
+    <!-- LISTA VIDEO -->
+    <div class="container" *ngIf="videosList.length > 0">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col mt-3" *ngFor="let video of videosList">
+          <h3 class="h3 mb-0 text-primary">{{video.titolo}}</h3>
+          <app-divider></app-divider>
+          <div *ngIf="video.videoPathFromStorage | async; let videoUrl">
+            <vg-player>
+              <video title="" preload="auto" controls>
+                <source src="{{videoUrl}}" type="video/mp4">
+              </video>
+            </vg-player>
+          </div>
+          <p>{{video.descrizione}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

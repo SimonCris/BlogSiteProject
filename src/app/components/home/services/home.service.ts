@@ -4,6 +4,8 @@ import {db} from "../../../../main";
 import {Photo, PhotoFactory} from "../../../data-model/classes/Photo";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
 import { query, where, orderBy, limit } from "firebase/firestore";
+import {environment} from "../../../../environments/environment";
+import {Article, ArticleFactory} from "../../../data-model/classes/Article";
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +34,7 @@ export class HomeService {
 
     let photoList: Photo[] = [];
     // const getImagesQuery = query(collection(db, "/blog/media/immagini"), where("population", ">", 100000), orderBy("population"), limit(2));
-    const getImagesQuery = query(collection(db, "/blog/media/immagini"), limit(3));
+    const getImagesQuery = query(collection(db, environment.endpoint.blog.immagini), limit(3));
     const querySnapshot = await getDocs(getImagesQuery);
     querySnapshot.forEach((doc) => {
       let photo = PhotoFactory.getInstanceFromObject(doc.data());
@@ -43,4 +45,21 @@ export class HomeService {
     return photoList;
 
   }
+
+  /** Servizio che recupera i 3 articoli presenti nel blog **/
+  public async getArticles(): Promise<Article[]> {
+
+    let articlesList: Article[] = [];
+    const getArticlesQuery = query(collection(db, environment.endpoint.blog.articoli), limit(3));
+    const querySnapshot = await getDocs(getArticlesQuery);
+    querySnapshot.forEach((doc) => {
+      let article = ArticleFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      article.imagePathFromStorage = this.afStorage.ref(article.imagePath).getDownloadURL();
+      articlesList.push(article);
+    });
+    return articlesList;
+
+  }
+
 }

@@ -1,0 +1,51 @@
+<div class="container sectionContainer">
+  <div class="row justify-content-center">
+    <div class="text-start wow fadeIn">
+      <h2 class="h1 mb-0 text-primary">{{"BLOG_SECTION" | translate}}</h2>
+    </div>
+    <app-divider></app-divider>
+
+    <p class="">{{"MEDIA_SECTION_SUBTITLE" | translate}}</p>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">{{"BLOG_PHOTO_LABEL" | translate}}</h3>
+            <app-divider></app-divider>
+            <p class="card-text">{{"BLOG_PHOTO_LABEL_SUBTITLE" | translate}}</p>
+            <div class="blogItemContent">
+              <a class="btn forwardButton" (click)="goTo('foto')">{{"BLOG_GO_TO_PHOTO_LABEL" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">{{"BLOG_VIDEO_LABEL" | translate}}</h3>
+            <app-divider></app-divider>
+            <p class="card-text">{{"BLOG_VIDEO_LABEL_SUBTITLE" | translate}}</p>
+            <div class="blogItemContent">
+              <a class="btn forwardButton" (click)="goTo('video')">{{"BLOG_GO_TO_VIDEO_LABEL" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">{{"BLOG_ARTICLE_LABEL" | translate}}</h3>
+            <app-divider></app-divider>
+            <p class="card-text">{{"BLOG_ARTICLE_LABEL_SUBTITLE" | translate}}</p>
+            <div class="blogItemContent">
+              <a class="btn forwardButton" (click)="goTo('articoli')">{{"BLOG_GO_TO_ARTICLE_LABEL" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

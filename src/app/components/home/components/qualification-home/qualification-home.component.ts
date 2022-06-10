@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {AppRoutingConstants} from "../../../../app-routingConstants";
+import {WorkflowRoutingService} from "../../../shared/services/workflow-routing.service";
+import {ScrollToTopComponent} from "../../../shared/components/scroll-to-top/scroll-to-top.component";
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-qualification-home',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QualificationHomeComponent implements OnInit {
 
-  constructor() { }
+  scrollToTopComponent: ScrollToTopComponent;
+
+  constructor(private workflowRoutingService: WorkflowRoutingService,
+              private scroll: ViewportScroller) {
+
+    this.scrollToTopComponent = new ScrollToTopComponent(this.scroll);
+
+  }
 
   ngOnInit(): void {
+  }
+
+  public goToQualifications(): void {
+    this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateQualifications);
+    this.scrollToTopComponent.scrollToTop();
   }
 
 }

@@ -1,0 +1,39 @@
+<div class="container sectionContainer">
+  <div class="row justify-content-center">
+    <div class="text-start wow fadeIn">
+      <h2 class="h1 mb-0 text-primary">{{"SERVICES_LIST_SECTION_IMAGE_CONSULTING" | translate}}</h2>
+    </div>
+    <app-divider></app-divider>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item breadcumbBlog" (click)="goToServicesList()"><a>{{"NAVBAR_MENU_SERVICES_LIST" | translate}}</a></li>
+        <li class="breadcrumb-item active breadcrumbSecondary" aria-current="page">{{"NAVBAR_MENU_SERVICES_LIST_IMAGE_CONSULTING" | translate}}</li>
+      </ol>
+    </nav>
+
+    <p class="mt-4">{{"SERVICES_LIST_SECTION_IMAGE_CONSULTING_SUBTITLE" | translate}}</p>
+
+    <!-- LISTA FOTO -->
+    <div class="container" *ngIf="imageConsultingList.length > 0">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col mt-3" *ngFor="let media of imageConsultingList">
+          <h3 class="h3 mb-0 text-primary">{{media.titolo}}</h3>
+          <app-divider></app-divider>
+          <div *ngIf="media.isPhoto && media.mediaPathFromStorage | async; let imageUrl">
+            <img [src]="imageUrl" class="img-fluid" alt="image">
+          </div>
+          <div *ngIf="media.isVideo && media.mediaPathFromStorage | async; let videoUrl">
+            <vg-player>
+              <video title="" preload="auto" controls>
+                <source src="{{videoUrl}}" type="video/mp4">
+              </video>
+            </vg-player>
+          </div>
+          <p>{{media.descrizione}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

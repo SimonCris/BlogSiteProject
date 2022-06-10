@@ -94,6 +94,7 @@
   /**border-radius: 10px;*/
   margin-left: 1%;
   margin-right: 1%;
+  cursor: pointer;
 }
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
@@ -299,4 +300,8 @@ top: 0;
 
 .logoImage {
   max-width: 85%;
+}
+
+.fontSmall {
+  font-size: smaller;
 }

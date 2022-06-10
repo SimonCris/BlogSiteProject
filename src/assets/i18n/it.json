@@ -2,12 +2,12 @@
   "MAIN_SECTIONS": "Main Sections",
   "MAIN_SECTIONS_ARMOCROMIA": "Armocromia",
   "MAIN_SECTIONS_WEDDING": "Wedding",
-  "MAIN_SECTIONS_MAKE_UP": "Make Up",
+  "MAIN_SECTIONS_MAKE_UP": "Make-up",
   "MAIN_SECTIONS_ARTICOLI": "Articoli",
 
   "ABOUT_ME_HOME_SECTION": "About Me",
   "ABOUT_ME_HOME_SECTION_TITLE": "ROSAMARIA TARZIA",
-  "ABOUT_ME_HOME_SECTION_SUBTITLE": "MAKE UP ARTIST E ARMOCROMISTA",
+  "ABOUT_ME_HOME_SECTION_SUBTITLE": "MAKE-UP ARTIST ARMOCROMISTA",
   "ABOUT_ME_HOME_SECTION_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   "ABOUT_ME_HOME_SECTION_DETAIL": "Approfondisci",
 
@@ -31,15 +31,18 @@
   "NAVBAR_MENU_ARMOCROMIA": "Armocromia",
   "NAVBAR_MENU_WEDDING": "Wedding",
   "NAVBAR_MENU_CAMBIO_LOOK": "Cambio Look",
-  "NAVBAR_MENU_FORME_VISO": "Forme del viso",
-  "NAVBAR_MENU_FORME_CORPO": "Forme del corpo",
-  "NAVBAR_MENU_MAKE_UP": "Make up in palette",
+  "NAVBAR_MENU_FORME_VISO": "Facial Shape",
+  "NAVBAR_MENU_FORME_CORPO": "Body Shape",
+  "NAVBAR_MENU_MAKE_UP": "Make-up in palette",
   "NAVBAR_MENU_QUALIFICATIONS": "Qualifiche",
   "NAVBAR_MENU_BLOG": "Blog",
   "NAVBAR_MENU_PHOTO": "Foto",
   "NAVBAR_MENU_VIDEO": "Video",
   "NAVBAR_MENU_ARTICOLI": "Articoli",
   "NAVBAR_MENU_SERVICES_LIST": "Lista Servizi",
+  "NAVBAR_MENU_SERVICES_LIST_STYLE_ANALYSIS": "Analisi dello stile",
+  "NAVBAR_MENU_SERVICES_LIST_SHOPPING": "Shopping & Guardaroba",
+  "NAVBAR_MENU_SERVICES_LIST_IMAGE_CONSULTING": "Consulenza d’immagine",
   "NAVBAR_MENU_CONTACTS": "Contatti",
 
   "FOOTER": "FOOTER",
@@ -47,10 +50,89 @@
   "FOOTER_MENU_ABOUT_ME": "About Me",
   "FOOTER_MENU_WORKS": "Works",
   "FOOTER_MENU_SERVICES_LIST": "Lista Servizi",
-  "FOOTER_MENU_MAKE_UP": "Make Up",
+  "FOOTER_MENU_MAKE_UP": "Make-up",
   "FOOTER_MENU_QUALIFICATIONS": "Qualifiche",
   "FOOTER_MENU_BLOG": "Blog",
   "FOOTER_MENU_CONTACS": "Contatti",
   "FOOTER_MENU_SOCIAL": "Social",
-  "FOOTER_COPYRIGHT": "© 2022 Copyright:"
+  "FOOTER_COPYRIGHT": "© 2022 Copyright:",
+
+  "WHO_I_AM_SECTION": "ABOUT ME",
+  "WHO_I_AMO_TEXT": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+  "WHO_I_AMO_SKILLS": "Skills & Experience",
+  "WHO_I_AMO_SKILLS_TEXT": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.",
+
+  "TELL_ABOUT_ME_SECTION": "DICONO DI ME",
+
+  "CONTACTS_SECTION": "CONTATTI",
+  "CONTACTS_SECTION_ADDRESS": "INDIRIZZO",
+  "CONTACTS_SECTION_MAIL": "MAIL",
+  "CONTACTS_SECTION_PHONE": "TELEFONO",
+  "CONTACTS_SECTION_FACEBOOK": "FACEBOOK",
+  "CONTACTS_SECTION_INSTAGRAM": "INSTAGRAM",
+  "CONTACTS_SECTION_YOUTUBE": "YOUTUBE",
+
+  "ARMOCROMIA_SECTION": "ARMOCROMIA",
+
+  "BODY_SHAPES_SECTION": "BODY SHAPES",
+
+  "FACE_SHAPES_SECTION": "FACIAL SHAPES",
+
+  "CHANGE_LOOK_SECTION": "CAMBIO LOOK",
+
+  "WEDDING_SECTION": "WEDDING",
+
+  "MAKEUP_IN_PALETTE_SECTION": "MAKE-UP IN PALETTE",
+
+  "BLOG_SECTION": "BLOG",
+  "BLOG_NAV_LABEL": "Blog",
+  "BLOG_ARTICLE_NAV_LABEL": "Articoli",
+  "BLOG_PHOTOS_NAV_LABEL": "Foto",
+  "BLOG_VIDEOS_NAV_LABEL": "Video",
+  "BLOG_PHOTO_LABEL": "FOTO",
+  "BLOG_PHOTO_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
+  "BLOG_GO_TO_PHOTO_LABEL": "Vai",
+  "BLOG_VIDEO_LABEL": "VIDEO",
+  "BLOG_VIDEO_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content.",
+  "BLOG_GO_TO_VIDEO_LABEL": "Vai",
+  "BLOG_ARTICLE_LABEL": "ARTICOLI",
+  "BLOG_ARTICLE_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
+  "BLOG_GO_TO_ARTICLE_LABEL": "Vai",
+
+  "BLOG_ARTICLES_SECTION": "ARTICOLI",
+  "BLOG_ARTICLES_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "BLOG_ARTICLES_GO_TO_ARTICLE_DETAIL": "Vai all'articolo",
+
+  "BLOG_PHOTOS_SECTION": "FOTO",
+  "BLOG_PHOTOS_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "BLOG_VIDEOS_SECTION": "VIDEO",
+  "BLOG_VIDEOS_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "QUALIFICATIONS_SECTION": "QUALIFICHE",
+
+  "SERVICES_LIST_SECTION": "LISTA SERVIZI",
+  "SERVICES_LIST_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "SERVICES_LIST_STYLE_ANALYSIS_LABEL": "ANALISI DELLO STILE",
+  "SERVICES_LIST_STYLE_ANALYSIS_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
+  "SERVICES_LIST_GO_TO_STYLE_ANALYSIS_LABEL": "Vai",
+  "SERVICES_LIST_SHOPPING_LABEL": "SHOPPING E GUARDAROBA",
+  "SERVICES_LIST_SHOPPING_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content.",
+  "SERVICES_LIST_GO_TO_SHOPPING_LABEL": "Vai",
+  "SERVICES_LIST_IMAGE_CONSULTING_LABEL": "CONSULENZA D'IMMAGINE COMPLETA (ARMOCROMIA, FORME, STILE)",
+  "SERVICES_LIST_IMAGE_CONSULTING_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
+  "SERVICES_LIST_GO_TO_IMAGE_CONSULTING_LABEL": "Vai",
+
+  "SERVICES_LIST_SECTION_IMAGE_CONSULTING": "CONSULENZA D'IMMAGINE COMPLETA (ARMOCROMIA, FORME, STILE)",
+  "SERVICES_LIST_SECTION_IMAGE_CONSULTING_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "SERVICES_LIST_SECTION_SHOPPING": "SHOPPING",
+  "SERVICES_LIST_SECTION_SHOPPING_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "SERVICES_LIST_SECTION_STYLE_ANALYSIS": "ANALISI DELLO STILE",
+  "SERVICES_LIST_SECTION_STYLE_ANALYSIS_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "GENERIC": "GENERIC",
+  "GENERIC_ERROR": "Si è verificato un errore",
+  "SPINNER_LOADING_LABEL": "Caricamento. . ."
 }
