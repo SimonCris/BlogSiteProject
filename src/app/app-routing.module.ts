@@ -20,12 +20,14 @@ import {BlogMainComponent} from "./components/blog/components/blog-main/blog-mai
 import {ImageConsultingComponent} from "./components/services-list/components/image-consulting/image-consulting.component";
 import {ShoppingComponent} from "./components/services-list/components/shopping/shopping.component";
 import {StyleAnalysisComponent} from "./components/services-list/components/style-analysis/style-analysis.component";
+import {WorksComponent} from "./components/works/components/works/works.component";
 
 const routes: Routes = [
   { path: '', redirectTo: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateHome), pathMatch: 'full' },
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateHome), component: HomeComponent}, // canActivate: [AuthGuard] },
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateWhoIAm), component: WhoIAmComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateTellAboutMe), component: TellAboutMeComponent},
+  { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateWorks), component: WorksComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateArmocromia), component: ArmocromiaComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateWedding), component: WeddingComponent},
   { path: AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateLookChange), component: LookChangeComponent},

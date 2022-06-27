@@ -79,6 +79,11 @@ export class WorkflowRoutingService {
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateTellAboutMe)]);
         break;
 
+      /** GO TO WORKS */
+      case AppRoutingConstants.masksState.stateWorks:
+        this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateWorks)]);
+        break;
+
       /** GO TO ARMOCROMIA */
       case AppRoutingConstants.masksState.stateArmocromia:
         this.routerService.navigate([AppRoutingConstants.fullPath(AppRoutingConstants.masksState.stateArmocromia)]);

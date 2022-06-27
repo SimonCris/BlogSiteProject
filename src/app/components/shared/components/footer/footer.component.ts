@@ -45,6 +45,11 @@ export class FooterComponent implements OnInit {
         this.scrollToTopComponent.scrollToTop();
         break;
 
+      case AppRoutingConstants.masksState.stateWorks:
+        this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateWorks);
+        this.scrollToTopComponent.scrollToTop();
+        break;
+
       case AppRoutingConstants.masksState.stateArmocromia:
         this.workflowRoutingService.goTo(AppRoutingConstants.masksState.stateArmocromia);
         this.scrollToTopComponent.scrollToTop();

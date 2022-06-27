@@ -5,6 +5,7 @@ export class AppRoutingConstants {
     home : "home",
     whoIAm: "chiSono",
     tellAboutMe: "diconoDiMe",
+    works: "works",
     armocromia: "armocromia",
     wedding: "wedding",
     lookChange: "cambioLook",
@@ -30,6 +31,7 @@ export class AppRoutingConstants {
     stateHome : "home",
     stateWhoIAm: "chiSono",
     stateTellAboutMe: "diconoDiMe",
+    stateWorks: "works",
     stateArmocromia: "armocromia",
     stateWedding: "wedding",
     stateLookChange: "cambioLook",
@@ -60,6 +62,9 @@ export class AppRoutingConstants {
 
       case this.path.tellAboutMe:
         return 'portal/' + this.path.tellAboutMe;
+
+      case this.path.works:
+        return 'portal/' + this.path.works;
 
       case this.path.armocromia:
         return 'portal/' + this.path.armocromia;

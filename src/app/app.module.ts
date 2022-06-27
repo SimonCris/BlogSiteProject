@@ -43,6 +43,7 @@ import {VgCoreModule} from "ngx-videogular";
 import { StyleAnalysisComponent } from './components/services-list/components/style-analysis/style-analysis.component';
 import { ShoppingComponent } from './components/services-list/components/shopping/shopping.component';
 import { ImageConsultingComponent } from './components/services-list/components/image-consulting/image-consulting.component';
+import { WorksComponent } from './components/works/components/works/works.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { ImageConsultingComponent } from './components/services-list/components/
     BlogMainComponent,
     StyleAnalysisComponent,
     ShoppingComponent,
-    ImageConsultingComponent
+    ImageConsultingComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule,
