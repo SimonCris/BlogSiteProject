@@ -40,7 +40,7 @@ export class FaceShapesComponent implements OnInit {
     this.scrollToTopComponent.scrollToTop();
   }
 
-  /** Metodo che recupera i media relativi all'armocromia */
+  /** Metodo che recupera i media relativi al facial shapes */
   getFacialShapesListList(): void {
     this.requestManagerService.pushNewRequest(RequestManagerConstants.GET_WORKS_FACIAL_SHAPES_LIST, REQUEST_PRIORITY.HIGH);
     this.worksService.getFacialShapesList().then(resp => {

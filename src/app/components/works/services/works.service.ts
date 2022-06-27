@@ -60,4 +60,36 @@ export class WorksService {
     return facialShapesList;
 
   }
+
+  /** Servizio che recupera i media inseriti nella sezione Body Shapes **/
+  public async getBodyShapesList(): Promise<GenericDoc[]> {
+
+    let bodyShapesList: GenericDoc[] = [];
+    const bodyShapesListQuery = query(collection(db, environment.endpoint.works.bodyShapes));
+    const querySnapshot = await getDocs(bodyShapesListQuery);
+    querySnapshot.forEach((doc) => {
+      let bodyShapesListFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      bodyShapesListFile.mediaPathFromStorage = this.afStorage.ref(bodyShapesListFile.mediaPath).getDownloadURL();
+      bodyShapesList.push(bodyShapesListFile);
+    });
+    return bodyShapesList;
+
+  }
+
+  /** Servizio che recupera i media inseriti nella sezione Look Change **/
+  public async getLookChangeList(): Promise<GenericDoc[]> {
+
+    let getLookChangeList: GenericDoc[] = [];
+    const getLookChangeListQuery = query(collection(db, environment.endpoint.works.lookChange));
+    const querySnapshot = await getDocs(getLookChangeListQuery);
+    querySnapshot.forEach((doc) => {
+      let getLookChangeListFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      getLookChangeListFile.mediaPathFromStorage = this.afStorage.ref(getLookChangeListFile.mediaPath).getDownloadURL();
+      getLookChangeList.push(getLookChangeListFile);
+    });
+    return getLookChangeList;
+
+  }
 }

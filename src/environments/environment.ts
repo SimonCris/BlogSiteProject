@@ -18,7 +18,9 @@ export const environment = {
     works: {
       armocromia: '/blog/media/works/media/armocromia',
       wedding: '/blog/media/works/media/wedding',
-      facialShapes: '/blog/media/works/media/facialShapes'
+      facialShapes: '/blog/media/works/media/facialShapes',
+      bodyShapes: '/blog/media/works/media/bodyShapes',
+      lookChange: '/blog/media/works/media/lookChange'
     }
   },
   firebaseConfig: {
