@@ -114,4 +114,20 @@ export class BlogService {
 
   }
 
+  /** Servizio che recupera i media inseriti nella sezione Make-up in palette **/
+  public async getMakeUpPaletteList(): Promise<GenericDoc[]> {
+
+    let makeupPaletteList: GenericDoc[] = [];
+    const makeupPaletteListQuery = query(collection(db, environment.endpoint.media.makeupPalette));
+    const querySnapshot = await getDocs(makeupPaletteListQuery);
+    querySnapshot.forEach((doc) => {
+      let makeupPaletteListFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      makeupPaletteListFile.mediaPathFromStorage = this.afStorage.ref(makeupPaletteListFile.mediaPath).getDownloadURL();
+      makeupPaletteList.push(makeupPaletteListFile);
+    });
+    return makeupPaletteList;
+
+  }
+
 }

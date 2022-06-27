@@ -4,5 +4,29 @@
       <h2 class="h1 mb-0 text-primary">{{"MAKEUP_IN_PALETTE_SECTION" | translate}}</h2>
     </div>
     <app-divider></app-divider>
+
+    <p class="mt-4">{{"MAKEUP_IN_PALETTE_SECTION_SUBTITLE" | translate}}</p>
+
+    <!-- LISTA MAKE-UP IN PALETTE -->
+    <div class="container" *ngIf="makeUpPaletteList.length > 0">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col mt-3" *ngFor="let media of makeUpPaletteList">
+          <h3 class="h3 mb-0 text-primary">{{media.titolo}}</h3>
+          <app-divider></app-divider>
+          <div *ngIf="media.isPhoto && media.mediaPathFromStorage | async; let imageUrl">
+            <img [src]="imageUrl" class="img-fluid" alt="image">
+          </div>
+          <div *ngIf="media.isVideo && media.mediaPathFromStorage | async; let videoUrl">
+            <vg-player>
+              <video title="" preload="auto" controls>
+                <source src="{{videoUrl}}" type="video/mp4">
+              </video>
+            </vg-player>
+          </div>
+          <p>{{media.descrizione}}</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

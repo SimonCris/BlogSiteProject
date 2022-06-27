@@ -9,7 +9,8 @@ export const environment = {
     media: {
       consulenzaImmagine: '/blog/media/consulenzaImmagine',
       analisiStile: '/blog/media/analisiStile',
-      shoppingEGuardaroba: '/blog/media/shoppingEGuardaroba'
+      shoppingEGuardaroba: '/blog/media/shoppingEGuardaroba',
+      makeupPalette: '/blog/media/makeupPalette'
     },
     works: {
       armocromia: '/blog/media/works/media/armocromia',
