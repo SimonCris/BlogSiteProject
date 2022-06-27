@@ -82,4 +82,36 @@ export class BlogService {
 
   }
 
+  /** Servizio che recupera i media inseriti nella sezione Analisi dello stile **/
+  public async getStyleAnalysisList(): Promise<GenericDoc[]> {
+
+    let styleAnalysisList: GenericDoc[] = [];
+    const getstyleAnalysisConsultingListQuery = query(collection(db, environment.endpoint.media.analisiStile));
+    const querySnapshot = await getDocs(getstyleAnalysisConsultingListQuery);
+    querySnapshot.forEach((doc) => {
+      let styleAnalysisFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      styleAnalysisFile.mediaPathFromStorage = this.afStorage.ref(styleAnalysisFile.mediaPath).getDownloadURL();
+      styleAnalysisList.push(styleAnalysisFile);
+    });
+    return styleAnalysisList;
+
+  }
+
+  /** Servizio che recupera i media inseriti nella sezione Shopping & Guardaroba **/
+  public async getShoppingList(): Promise<GenericDoc[]> {
+
+    let shoppingList: GenericDoc[] = [];
+    const shoppingListQuery = query(collection(db, environment.endpoint.media.shoppingEGuardaroba));
+    const querySnapshot = await getDocs(shoppingListQuery);
+    querySnapshot.forEach((doc) => {
+      let shoppingListFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      shoppingListFile.mediaPathFromStorage = this.afStorage.ref(shoppingListFile.mediaPath).getDownloadURL();
+      shoppingList.push(shoppingListFile);
+    });
+    return shoppingList;
+
+  }
+
 }

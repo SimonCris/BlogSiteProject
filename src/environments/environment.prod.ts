@@ -7,7 +7,9 @@ export const environment = {
       video: '/blog/media/video'
     },
     media: {
-      consulenzaImmagine: '/blog/media/consulenzaImmagine'
+      consulenzaImmagine: '/blog/media/consulenzaImmagine',
+      analisiStile: '/blog/media/analisiStile',
+      shoppingEGuardaroba: '/blog/media/shoppingEGuardaroba'
     }
   },
   firebaseConfig: {

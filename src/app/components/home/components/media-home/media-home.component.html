@@ -52,7 +52,7 @@
     <div class="card-text articlesDiv" *ngIf="articlesList.length > 0">
       <h1 class="card-title">{{"MEDIA_SECTION_ARTICLE_TITLE" | translate}}</h1>
       <p class="">{{"MEDIA_SECTION_SUBTITLE2" | translate}}</p>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
         <div class="col">
           <div class="card h-100 articleItem" *ngIf="articlesList[0].imagePathFromStorage | async; let article1Url">
             <img [src]="article1Url" class="card-img-top imageDiv" alt="...">

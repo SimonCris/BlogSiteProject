@@ -41,7 +41,7 @@ export class ImageConsultingComponent implements OnInit {
     this.scrollToTopComponent.scrollToTop();
   }
 
-  /** Metodo che recupera la lista di articoli */
+  /** Metodo che recupera la lista degli oggetti relativa alla consulenza d'immagine */
   getImageConsultingList(): void {
     this.requestManagerService.pushNewRequest(RequestManagerConstants.GET_IMAGE_CONSULTING_LIST, REQUEST_PRIORITY.HIGH);
     this.blogService.getImageConsultingList().then(resp => {
