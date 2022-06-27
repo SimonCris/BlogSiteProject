@@ -14,6 +14,9 @@ export const environment = {
       consulenzaImmagine: '/blog/media/consulenzaImmagine',
       analisiStile: '/blog/media/analisiStile',
       shoppingEGuardaroba: '/blog/media/shoppingEGuardaroba'
+    },
+    works: {
+      armocromia: '/blog/media/works/media/armocromia'
     }
   },
   firebaseConfig: {

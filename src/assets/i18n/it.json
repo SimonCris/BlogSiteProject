@@ -73,6 +73,7 @@
   "CONTACTS_SECTION_YOUTUBE": "YOUTUBE",
 
   "WORKS_SECTION": "WORKS",
+  "WORKS_NAV_LABEL": "Works",
   "WORKS_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "WORKS_ARMOCROMIA_LABEL": "ARMOCROMIA",
   "WORKS_ARMOCROMIA_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
@@ -88,6 +89,8 @@
   "WORKS_GO_TO": "Vai",
 
   "ARMOCROMIA_SECTION": "ARMOCROMIA",
+  "ARMOCROMIA_NAV_LABEL": "Armocromia",
+  "ARMOCROMIA_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
   "BODY_SHAPES_SECTION": "BODY SHAPES",
 
