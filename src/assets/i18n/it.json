@@ -55,7 +55,7 @@
   "FOOTER_MENU_BLOG": "Blog",
   "FOOTER_MENU_CONTACS": "Contatti",
   "FOOTER_MENU_SOCIAL": "Social",
-  "FOOTER_COPYRIGHT": "© 2022 Copyright:",
+  "FOOTER_COPYRIGHT": "© 2022 Copyright: Rosamaria Tarzia MUA Armocromista",
 
   "WHO_I_AM_SECTION": "ABOUT ME",
   "WHO_I_AMO_TEXT": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
@@ -71,6 +71,21 @@
   "CONTACTS_SECTION_FACEBOOK": "FACEBOOK",
   "CONTACTS_SECTION_INSTAGRAM": "INSTAGRAM",
   "CONTACTS_SECTION_YOUTUBE": "YOUTUBE",
+
+  "WORKS_SECTION": "WORKS",
+  "WORKS_SECTION_SUBTITLE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "WORKS_ARMOCROMIA_LABEL": "ARMOCROMIA",
+  "WORKS_ARMOCROMIA_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
+  "WORKS_WEDDING_LABEL": "WEDDING",
+  "WORKS_WEDDING_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content.",
+  "WORKS_CHANGE_LOOK_LABEL": "CAMBIO LOOK",
+  "WORKS_CHANGE_LOOK_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content.",
+  "WORKS_FACIAL_SHAPES_LABEL": "FACIAL SHAPES",
+  "WORKS_FACIAL_SHAPES_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content.",
+  "WORKS_BODY_SHAPES_LABEL": "BODY SHAPES",
+  "WORKS_BODY_SHAPES_LABEL_SUBTITLE": "With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.",
+
+  "WORKS_GO_TO": "Vai",
 
   "ARMOCROMIA_SECTION": "ARMOCROMIA",
 
