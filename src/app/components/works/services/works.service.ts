@@ -28,4 +28,36 @@ export class WorksService {
     return armocromiaList;
 
   }
+
+  /** Servizio che recupera i media inseriti nella sezione Wedding **/
+  public async getWeddingList(): Promise<GenericDoc[]> {
+
+    let weddingList: GenericDoc[] = [];
+    const weddingListQuery = query(collection(db, environment.endpoint.works.wedding));
+    const querySnapshot = await getDocs(weddingListQuery);
+    querySnapshot.forEach((doc) => {
+      let weddingListFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      weddingListFile.mediaPathFromStorage = this.afStorage.ref(weddingListFile.mediaPath).getDownloadURL();
+      weddingList.push(weddingListFile);
+    });
+    return weddingList;
+
+  }
+
+  /** Servizio che recupera i media inseriti nella sezione Facial Shapes **/
+  public async getFacialShapesList(): Promise<GenericDoc[]> {
+
+    let facialShapesList: GenericDoc[] = [];
+    const facialShapesListQuery = query(collection(db, environment.endpoint.works.facialShapes));
+    const querySnapshot = await getDocs(facialShapesListQuery);
+    querySnapshot.forEach((doc) => {
+      let facialShapesListFile = GenericDocFactory.getInstanceFromObject(doc.data());
+      /** Recupera l'url dallo storage da usare nell'HTML*/
+      facialShapesListFile.mediaPathFromStorage = this.afStorage.ref(facialShapesListFile.mediaPath).getDownloadURL();
+      facialShapesList.push(facialShapesListFile);
+    });
+    return facialShapesList;
+
+  }
 }

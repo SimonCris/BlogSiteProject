@@ -12,7 +12,9 @@ export const environment = {
       shoppingEGuardaroba: '/blog/media/shoppingEGuardaroba'
     },
     works: {
-      armocromia: '/blog/media/works/media/armocromia'
+      armocromia: '/blog/media/works/media/armocromia',
+      wedding: '/blog/media/works/media/wedding',
+      facialShapes: '/blog/media/works/media/facialShapes'
     }
   },
   firebaseConfig: {

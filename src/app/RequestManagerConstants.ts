@@ -10,5 +10,7 @@ export class RequestManagerConstants {
   public static GET_SHOPPING_LIST = 'GET_SHOPPING_LIST';
 
   public static GET_WORKS_ARMOCROMIA_LIST = 'GET_WORKS_ARMOCROMIA_LIST';
+  public static GET_WORKS_WEDDING_LIST = 'GET_WORKS_WEDDING_LIST';
+  public static GET_WORKS_FACIAL_SHAPES_LIST = 'GET_WORKS_FACIAL_SHAPES_LIST';
 
 }

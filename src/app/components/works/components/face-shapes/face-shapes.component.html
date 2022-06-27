@@ -5,5 +5,35 @@
     </div>
     <app-divider></app-divider>
 
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item breadcumbBlog" (click)="goToWorks()"><a>{{"WORKS_NAV_LABEL" | translate}}</a></li>
+        <li class="breadcrumb-item active breadcrumbSecondary" aria-current="page">{{"FACE_SHAPES_NAV_LABEL" | translate}}</li>
+      </ol>
+    </nav>
+
+    <p class="mt-4">{{"FACE_SHAPES_SECTION_SUBTITLE" | translate}}</p>
+
+    <!-- LISTA ARMOCROMIA -->
+    <div class="container" *ngIf="facialShapesList.length > 0">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col mt-3" *ngFor="let media of facialShapesList">
+          <h3 class="h3 mb-0 text-primary">{{media.titolo}}</h3>
+          <app-divider></app-divider>
+          <div *ngIf="media.isPhoto && media.mediaPathFromStorage | async; let imageUrl">
+            <img [src]="imageUrl" class="img-fluid" alt="image">
+          </div>
+          <div *ngIf="media.isVideo && media.mediaPathFromStorage | async; let videoUrl">
+            <vg-player>
+              <video title="" preload="auto" controls>
+                <source src="{{videoUrl}}" type="video/mp4">
+              </video>
+            </vg-player>
+          </div>
+          <p>{{media.descrizione}}</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
